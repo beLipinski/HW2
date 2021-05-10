@@ -36,7 +36,28 @@ Nicht erst durch Moderne Entwicklungen, wie digitale Vernetzung mit dem Internet
 Realisierbar werden elektrische Verschaltungen in der Digitaltechnik erst durch den einsatz sogenannter Logikbausteine, die mit einander kombiniert ein vorher genau bestimmtes verhalten der geplanten Schaltung verursachen.
 Hierbei übernehmen verschiedene Bausteine verschiedene Aufgaben, die mal weniger und mal mehr kompliziertere Operationen beinhalten. 
 \subsubsection{AND-Gatter}
-Eine der Grundoperationen, die sich in fast jeder 
+Eine der Grundoperationen, die in fast jeder schaltung zu finden ist, ist die AND zu deutsch die UND Operation. hierbei wird der eingang erst auf logisch 1 geschaltet, wenn alle eingänge dies ebenfalls sind.\\
+\begin{tabular}[h]{ccc}
+x&y&Out\\
+0&0&0\\
+0&1&0\\
+1&0&0\\
+1&1&1\\
+\end{tabular}
+\subsubsection{OR-Gatter}
+Das Ergebnis des OR-Gatters ist in dem Fall Wahr, wenn einer seiner Eingänge Wahr ist.\\
+\begin{tabular}[h]{ccc}
+x&y&Out\\
+0&0&0\\
+0&1&1\\
+1&0&1\\
+1&1&1\\
+\end{tabular}
+\\Simple Schaltungen lassen sich durch das gezielte aneinanderreihen von AND und OR Gattern gut realisieren, sollte aber 
+\subsubsection{Multiplexer}
+Multiplexer werden benutzt, wenn eine Parallele Verarbeitung aus unterschiedlichsten gründen nicht möglich ist, das kann zum einen eine nicht ausreichende Verfügbarkeit an Kanälen sein, aber auch eine bewusste Entscheidung weniger Kanäle aus kosten gründen zu benutzen sein. Dieser schritt kann gewählt werden, wenn Verläufe zwar parallel laufen aber nur exklusiv ausgeführt werden, das bedeutet, dass nach einer elementaren Entscheidung nur einer der beiden Stränge ausgeführt werden kann. Beeindruckend allerdings ist, das Multiplexer trotz ihrer fortgeschrittenen eignenschaften gegenüber den Grundbausteinen, doch recht simple aus genau diesem erzeugt werden kann. So ergibt sich für einen Einfachen Multiplexer das schaltbild aus 2 AND-Gattern, Einem NOT- Gatter und einem OR- Gatter. .....
+\subsubsection{FPGA}
+Der Einsatz von diesen Grundelementen ist für das erreichen des Ziels völlig hinreichend, doch benötigt sie eine sehr hohe fläche, auf der sie Verbaut werden muss. Ein zu erreichendes Ziel ist, die Fläche auf der die schaltung realisiert werden muss zu verringern. Dies ist durch die verwendung von halbleitern und die entwicklung von Integrierten schaltkreisen auch erfolgreich gelungen, allerdings besitzen diese sogenannten IC's den nachteil, das ihre Schaltung wie die einer realisierung mit Bausteinen auch fest gebunden ist. Ein Nachteil, den FPGA (Field Programmable Gate ARRAY) Bauteile nicht besitzen, ihr Vorteil ist die Zusammensetzung aus Zusammengeschalteten Baugruppen aus Logikbausteinen, FlipFlops und derer verbindung mit Multiplexern. In FPGA's kann das Verhalten der Eingänge zu den Ausgängen über...... "Programmiert" werden.
 \subsection{Allocation}
 \subsection{Binding}
 \subsection{Sharing}
