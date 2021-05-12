@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.28)  11 MAY 2021 19:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.28)  12 MAY 2021 08:33
 entering extended mode
 **./conference_101719.tex
 (conference_101719.tex
@@ -324,21 +324,24 @@ Before submitting the final camera ready copy, remember to:
 
 [1
 
-] (conference_101719.aux) ) 
+] (conference_101719.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3877 strings out of 479321
- 57421 string characters out of 2856583
+ 3878 strings out of 479321
+ 57425 string characters out of 2856583
  363578 words of memory out of 3000000
- 21321 multiletter control sequences out of 15000+600000
+ 21322 multiletter control sequences out of 15000+600000
  433400 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,6n,74p,897b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/bened/AppData/Local/Programs/MiKTeX/fonts/
-enc/dvips/base/8r.enc}<C:/Users/bened/AppData/Local/Programs/MiKTeX/fonts/type1
-/urw/times/utmb8a.pfb><C:/Users/bened/AppData/Local/Programs/MiKTeX/fonts/type1
-/urw/times/utmr8a.pfb><C:/Users/bened/AppData/Local/Programs/MiKTeX/fonts/type1
-/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (2 pages, 47110 bytes).
+{C:/Users/bened/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
+/Users/bened/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:
+/Users/bened/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:
+/Users/bened/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on conference_101719.pdf (2 pages, 47460 bytes).
 PDF statistics:
  22 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
