@@ -25,8 +25,12 @@ benedikt.lipinski@stud.hshl.de}
 
 \end{abstract}
 \end{titlepage}
-\newpage
+\begin{titlepage}
+\tableofcontents
+\end{titlepage}
 
+
+\newpage
 \section{Introduction}
 Durch das menschliche verlangen Problemstellungen zu-gunsten schwindender Komplexität und erhöhtem Komfort zu automatisieren und zu brechen, wurden genau diese Anforderungen auf die elektrischer Schaltungen umgelegt. 
 \subsection{Problemstellung}
@@ -60,30 +64,76 @@ Multiplexer werden benutzt, wenn eine Parallele Verarbeitung aus unterschiedlich
 Der Einsatz von diesen Grundelementen ist für das erreichen des Ziels völlig hinreichend, doch benötigt sie eine sehr hohe fläche, auf der sie Verbaut werden muss. Ein zu erreichendes Ziel ist, die Fläche auf der die schaltung realisiert werden muss zu verringern. Dies ist durch die verwendung von halbleitern und die entwicklung von Integrierten schaltkreisen auch erfolgreich gelungen, allerdings besitzen diese sogenannten IC's den nachteil, das ihre Schaltung wie die einer realisierung mit Bausteinen auch fest gebunden ist. Ein Nachteil, den FPGA (Field Programmable Gate ARRAY) Bauteile nicht besitzen, ihr Vorteil ist die Zusammensetzung aus Zusammengeschalteten Baugruppen aus Logikbausteinen, FlipFlops und derer verbindung mit Multiplexern. In FPGA's kann das Verhalten der Eingänge zu den Ausgängen über...... "Programmiert" werden.
 \subsection{Allocation}
 
-...ist eigl. Binding wird aber auch mit der betrachtung der zur verfügung stehenden Resourcen in verbinduggebracht 
+%...ist eigl. Binding wird aber auch mit der betrachtung der zur verfügung stehenden Resourcen in verbinduggebracht 
 
-MEnge der zur Verfügung stehenden recourcen 
-Die Allokation ist eine Funktion, die angibt zu welchem Ressourcen typ Wiviele REssourcen zu r verfügung stehen 
+%MEnge der zur Verfügung stehenden recourcen 
+%Die Allokation ist eine Funktion, die angibt zu welchem Ressourcen typ Wiviele REssourcen zu r verfügung stehen 
 
+
+
+
+Nicht nur, aber vor allem aus Kosten und Platzgründen stehen der Entwicklung selten unbegrenzte resourcen zur verfügung. Aus diesem Grund kann die Betrachtung der zur verfügung stehenden resourcen zwingend notwendig werden. Somit ist das ergebnis der allokierung nach Teich \cite{1}    
+, eine funktion $ \alpha(r_k)$ die angibt wie viele verfügbare Bauteile es zu einer Jeweiligen Resourcentyp gibt.\\
+Damit würde, wenn vom Resourcentyp Mulitplizier: $r_1$,Beispielweise 1 Einheiten zur verfügung stehen die Allokierungsfunkion $\alpha(r_1) = 2$ lauten. Die Funktion der Allokation zeigt deshalb ziemlich genau welche probleme beziehungsweise zeitliche veränderungen entstehen durch die grenzen, die durch die begrenzte verfügbarkeit an Resourcen gegeben werden. Dies kann ein nützlicher zwischenschritt sein um den überblick zu behalten,den Teich mittels eines Ressourcen graphen anschaulich darstellt.In vielen Literaturen allerdings wird dieser schritt auch in die Bindung integriert und nicht extra behaldelt.
 \subsection{Binding}
--Welche INstanz und welcher Ressourcentyp
--connected die ressourcen und instanzen zu eioner bestimmten aufgabe 
--
+Im unterschied zur Allokierung wird in der Bindung schließlich festgelegt welche Resource welche operation zugeteilt bekommt,also die Zuweisung von Operationen zu bestimmten hardware Komponenten \cite{3}. in einer Utopischen vorstellung in der Kosten und Fläche keine rolle spielen würden, könnte für jeden Rechnenschritt, jede Operation, also zum beispiel für jede Multiplikation oder jeden vergleich eine eigene Komponete Benutzt werden. Leider ist diese vorstellung in der Praxis nicht durchführbar,  da jedes gesparte bauteil auf eine Große stückzahl gerechnet den Kostendruck lindert.Das ist zudem auch nicht zwingend nötig, da Beilspielsweise ein Vergleich nach eine Addition, welche beide durch eine Alu realisiert werden können, nicht unbedingt durch 2 verschiedene Hardware einheiten umgesetzt werden müssen, da der vergleich erst stattfinden kann wenn das ergebnis der Addition vorliegt. genannt wird dies in diesem fall ein Optimal Resource sharing oder zu Deutsch ein Optimales ausnutzen einer Resource\cite{2}.\\
+Die Bindung bietet ein Tool, das veranschaulicht wie optimal die vorhandene schaltung auf und mit den gegebenen Bauteilen realisiert wird. Da das engültige Ziel eine Optimale ausnutzung der vorhandenen resourcen ist müssen nun schrittweise die benötigten Bauteile minimiert werden, dies wird erreicht indem anfangs jede Operation einem bauteil zugeordnet wird, es wird ein sogenannte dedizierte Ressource erzeugt, ein spezialfall \cite[S. 150]{3} 
+\begin{figure}[h]
+\center{\includegraphics[scale=0.55]{fig_bsp_binding}}
+\caption{Besipiel zur Bindung}}
+\label{fig.2}
+\end{figure} \\
+Dem Bild ist zu entnehmen das in diesem beispiel für die zuordnung jeder Aufgabe zu einer Resource:11 Bauteile benötigt werden.
+ Die sich aus 3 Multiplikationen = $r_1$ und aus 8 operationen für eine Arithmetisch logisch einheit $r_2$ ergibt.\\
+\begin{tabular}[h]{ccc}
+$v_i$&$\beta(v_i)$&$\gamma(v_i)$\\
+$v_1$&$r_2$&1\\
+$v_2$&$r_1$&1\\
+$v_2$&$r_2$&2\\
+1&1&1\\
+\end{tabular}
+
+
+
+
+
+
+%-Welche INstanz und welcher Ressourcentyp
+%-connected die ressourcen und instanzen zu eioner bestimmten aufgabe 
+
 \subsection{Sharing}
 - Die Mehrfachverwendung von Ressourcen 
 \section{Grundlegendes}
 \subsection{Kompatiblitäts- und Konfliktgraphen}
 Graph zur betrachtung der Verträglichkeit einzelner Operationen
--Schwach verträglich
+zeigt auf einen bliock welche operationen mit einander kombiniert werden können und welche nach folgenden regeln auf keinen fall kombiniert werden können
 
+-Schwach verträglich
+wenn vom gleichen ressourcentyp ?? 
 -Ablaufplan verträglich
+alternativ sind
 -Stark verträglich
+nicht gleichzeitig sind und mit einem gerichteten graph verbunden 
+
 
 \subsection{Strategien zur Architektur Optimierung}
+
 \subsection{Resource Dominated circuits}
+da probleme leider ein wenig komplizierter 
+
+behamndelt wir die grundlegende optimierung mit dem grundlagen wissen aus Konflikt und Optimum graph 
+
+z.b mittels register sharing
+-G.micheli S 156 
 \section{General Circuits}
 \subsection{Allgm.}
+
+ganz allgemein wird jetzt auch die verzögerung durch steuerlogik und die verkabeluing betrachtet, also wie man so schön sagt ein reale verschaltung
 \subsection{Baugruppen}
+ \subsubsection{Register}
+ \subsubsection{Steuerlogik}
+ \subsubsection{Verkabelung}
+ \subsubsection{kontroll einheiten}
 \section{Sharing and Binding for General Circuits}
 \subsection{Unconstrained minimum - Area Binding}
 \subsection{Performance Constrained Binding}
@@ -92,8 +142,9 @@ Graph zur betrachtung der Verträglichkeit einzelner Operationen
 \section{Ausblick}
 
 \begin{thebibliography}{00}
-\bibitem{b1} Jürgen Teich, Christian Haubelt, Digitale Hardware/Software-Systeme, Synthese und Optimierung, 2. Auflage,Springer,2007
-\bibitem{b2} Dr.Walter Lange, Prof.Dr.Martin Bogdan, Entwurf und Syntese von Eingebetteten Systhemen, Ein Lehrbuch,Oldenbourg Verlag München, 2013
+\bibitem{1} Jürgen Teich, Christian Haubelt, Digitale Hardware/Software-Systeme, Synthese und Optimierung, 2. Auflage,Springer,2007
+\bibitem{2} Dr.Walter Lange, Prof.Dr.Martin Bogdan, Entwurf und Syntese von Eingebetteten Systhemen, Ein Lehrbuch,Oldenbourg Verlag München, 2013
+\bibitem{3} DEMICH
 \end{thebibliography}
 \vspace{12pt}
 
