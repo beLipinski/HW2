@@ -81,30 +81,65 @@ Die Bindung bietet ein Tool, das veranschaulicht wie optimal die vorhandene scha
 \begin{figure}[h]
 \center{\includegraphics[scale=0.55]{fig_bsp_binding}}
 \caption{Besipiel zur Bindung}}
-\label{fig.2}
-\end{figure} \\
+\label{fig.1}
+\end{figure} 
+
 Dem Bild ist zu entnehmen das in diesem beispiel für die zuordnung jeder Aufgabe zu einer Resource:11 Bauteile benötigt werden.
  Die sich aus 3 Multiplikationen = $r_1$ und aus 8 operationen für eine Arithmetisch logisch einheit $r_2$ ergibt.\\
 \begin{tabular}[h]{ccc}
 $v_i$&$\beta(v_i)$&$\gamma(v_i)$\\
 $v_1$&$r_2$&1\\
 $v_2$&$r_1$&1\\
-$v_2$&$r_2$&2\\
-1&1&1\\
+$v_3$&$r_2$&2\\
+$v_4$&$r_2$&3\\
+$v_5$&$r_2$&4\\
+$v_6$&$r_2$&5\\
+$v_7$&$r_1$&2\\
+$v_8$&$r_2$&6\\
+$v_9$&$r_2$&7\\
+$v_10$&$r_2$&8\\
+$v_11$&$r_1$&3\\
 \end{tabular}
-
-
-
-
-
+\\Da es sich, um ein recht einfach zu überblickendes beispiel handelt, lässt sich durch einen geübten blick bereits erkennen wie eine Optimierung aussehen könnte. Im ersten Zeitslot ist abzulesen, das 3 Arithmetische operationen und eine Multiplikation durchgeführt werden, somit werden 3 ALU Einheiten und ein Multiplizierer benötigt.Im weiteren verlauf lässt sich unteranderem erkennen das in keinem weiteren zeitzlot mehr als 3 ALU einheiten gebraucht werden, deswegen ist dies auch unsere minimal benötigte anzahl an Resourcen dieses typs. Ganz genau deutlich wird dies durch eine veranschaulichung in einer tabelle.
+\begin{tabular}[h]{ccc}
+Zeitslot&ALU&Multiplizierer\\
+1&3&1\\
+2&2&1\\
+3&2&0\\
+4&1&0\\
+5&0&0\\
+\end{tabular}
+\\Aus der Tabelle kann nun abgelesen werden, das 3 Resourcen des Typs ALU benötigt werden und 1 des Typs Mulitplizierer.\\
+Übertragen auf die obere Tabelle ensteht nun folgendes Binding.\\
+\begin{tabular}[h]{ccc}
+$v_i$&$\beta(v_i)$&$\gamma(v_i)$\\
+$v_1$&$r_2$&1\\
+$v_2$&$r_1$&1\\
+$v_3$&$r_2$&2\\
+$v_4$&$r_2$&3\\
+$v_5$&$r_2$&1\\
+$v_6$&$r_2$&2\\
+$v_7$&$r_1$&1\\
+$v_8$&$r_2$&1\\
+$v_9$&$r_2$&2\\
+$v_10$&$r_2$&1\\
+$v_11$&$r_1$&1\\
+\end{tabular}
+Somit wurden in diesem beispiel 5 Alu einheiten die einen anteil von $62,5\%$ ausmachen eingespart. Bei den Multiplizierern wurde die benötigten Resourcen auf $\frac{1}{3}$ reduziert.
 
 %-Welche INstanz und welcher Ressourcentyp
 %-connected die ressourcen und instanzen zu eioner bestimmten aufgabe 
 
 \subsection{Sharing}
-- Die Mehrfachverwendung von Ressourcen 
+das sharing beschreibt zusammen mit dem Binding,  die effektive mehrfachnutzung der Ressourcen, welches der minimierung der verwendeten hardware dient und somit zu reduzierung von Flächen und kosten problemen beiträgt. wobei das ziel des Sharing die frage nach dem Alghoritmus zur optimerung ist und anschließend mit einem Binding endet. In dem Kapitel Binding wurde ein einfach im Kopf zu lösendes Beispiel gezeigt, leider bleibt es in der Realität nicht immer bei so einfach zu lösenden systemen, so dass da schnell der überblick verloren gehen kann und zudem ein system unter umständen nicht zu lösen wäre. Aus diesem grund befasst sich dass sharing mit der frage wie ein vorhandenes system effektiv optimiert werden kann.Zu den Verwendeten Alghoritmen zählen unter anderem aus dem breich der REsource Dominated Circuits das Register sharing, Multiport Memory Binding und das Bus sharing and Binding und für den bereich der general circuits, sind es Unconstrained minimum - Area Binding, Performance Constrained Binding und zu letzt Performance Directed Binding.   
 \section{Grundlegendes}
 \subsection{Kompatiblitäts- und Konfliktgraphen}
+Als vorrausetzung, um überhaupt eine sinnvolle Bindung beziehungsweise Allokierung erzeugen zu können muss sich im 1. schritt einmal mit dem eigentlichen problem befasst werden. Um das Problem darstellen zu können wird ein Graph aufgestellt, der die eigenschaften der elemente beschreibt. Dieser Schritt ermöglicht die betrachtung der einzelnen operationen mit einander und stellt auf welche mit einander Kompatibel sind und welche ein kritisches verhalten zu einander aufweisen.\\
+Zwei oder mehr Operationen sind mit einander Kompatibel und können an die Gleiche Resource gebunden werden wenn sie nicht mit einander Konkurrieren und wenn sie dem gleichen Resourcen-typen angehören\cite[S.231]{3}\\
+Das bedeutet konkreit, dass aufgaben mit einander kompatibel sind, wenn sie nicht im gleichen Zeitslot neben einander anliegen und wenn sie des gleichen typs sind zum Beispiel Addierer.
+Die entwicklung der ges graphensystems kann grundsätzlich über 2 ansätze erfolgen, zum einen kann ein Kompatiblitätsgraph oder Verträglichkeitsgraph entwickelt werden, dieser graph gibt an welche Operationen verträglich zu einander sind und somit keine probleme darstellen komplemäntar dazu lässt sich durch den Konflikt graphen angeben welche Operationen im konflik zu einander stehen und eine genauere betrachtung bedüfen.\\
+
+
 Graph zur betrachtung der Verträglichkeit einzelner Operationen
 zeigt auf einen bliock welche operationen mit einander kombiniert werden können und welche nach folgenden regeln auf keinen fall kombiniert werden können
 
