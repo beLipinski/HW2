@@ -12,17 +12,17 @@
 \contentsline {subsection}{\numberline {\mbox {II-A}}Kompatiblitäts- und Konfliktgraphen}{2}%
 \contentsline {subsection}{\numberline {\mbox {II-B}}Strategien zur Architektur Optimierung}{3}%
 \contentsline {subsection}{\numberline {\mbox {II-C}}Resource Dominated circuits}{3}%
-\contentsline {section}{\numberline {III}General Circuits}{3}%
-\contentsline {subsection}{\numberline {\mbox {III-A}}Allgm.}{3}%
-\contentsline {subsection}{\numberline {\mbox {III-B}}Baugruppen}{3}%
-\contentsline {subsubsection}{\numberline {\mbox {III-B}1}Register}{3}%
-\contentsline {subsubsection}{\numberline {\mbox {III-B}2}Steuerlogik}{3}%
-\contentsline {subsubsection}{\numberline {\mbox {III-B}3}Verkabelung}{3}%
-\contentsline {subsubsection}{\numberline {\mbox {III-B}4}kontroll einheiten}{3}%
-\contentsline {section}{\numberline {IV}Sharing and Binding for General Circuits}{3}%
-\contentsline {subsection}{\numberline {\mbox {IV-A}}Unconstrained minimum - Area Binding}{3}%
-\contentsline {subsection}{\numberline {\mbox {IV-B}}Performance Constrained Binding}{3}%
-\contentsline {subsection}{\numberline {\mbox {IV-C}}Performance Directed Binding}{3}%
-\contentsline {section}{\numberline {V}Gleichnis,vorgestellter Algorithmen}{3}%
-\contentsline {section}{\numberline {VI}Ausblick}{3}%
-\contentsline {section}{References}{3}%
+\contentsline {section}{\numberline {III}General Circuits}{4}%
+\contentsline {subsection}{\numberline {\mbox {III-A}}Allgm.}{4}%
+\contentsline {subsection}{\numberline {\mbox {III-B}}Baugruppen}{4}%
+\contentsline {subsubsection}{\numberline {\mbox {III-B}1}Register}{4}%
+\contentsline {subsubsection}{\numberline {\mbox {III-B}2}Steuerlogik}{4}%
+\contentsline {subsubsection}{\numberline {\mbox {III-B}3}Verkabelung}{4}%
+\contentsline {subsubsection}{\numberline {\mbox {III-B}4}kontroll einheiten}{4}%
+\contentsline {section}{\numberline {IV}Sharing and Binding for General Circuits}{4}%
+\contentsline {subsection}{\numberline {\mbox {IV-A}}Unconstrained minimum - Area Binding}{4}%
+\contentsline {subsection}{\numberline {\mbox {IV-B}}Performance Constrained Binding}{4}%
+\contentsline {subsection}{\numberline {\mbox {IV-C}}Performance Directed Binding}{4}%
+\contentsline {section}{\numberline {V}Gleichnis,vorgestellter Algorithmen}{4}%
+\contentsline {section}{\numberline {VI}Ausblick}{4}%
+\contentsline {section}{References}{4}%

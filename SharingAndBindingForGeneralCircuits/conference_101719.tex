@@ -80,7 +80,7 @@ Im unterschied zur Allokierung wird in der Bindung schließlich festgelegt welch
 Die Bindung bietet ein Tool, das veranschaulicht wie optimal die vorhandene schaltung auf und mit den gegebenen Bauteilen realisiert wird. Da das engültige Ziel eine Optimale ausnutzung der vorhandenen resourcen ist müssen nun schrittweise die benötigten Bauteile minimiert werden, dies wird erreicht indem anfangs jede Operation einem bauteil zugeordnet wird, es wird ein sogenannte dedizierte Ressource erzeugt, ein spezialfall \cite[S. 150]{3} 
 \begin{figure}[h]
 \center{\includegraphics[scale=0.55]{fig_bsp_binding}}
-\caption{Besipiel zur Bindung}}
+\caption{Besipiel zur Bindung}
 \label{fig.1}
 \end{figure} 
 
@@ -100,7 +100,7 @@ $v_9$&$r_2$&7\\
 $v_10$&$r_2$&8\\
 $v_11$&$r_1$&3\\
 \end{tabular}
-\\Da es sich, um ein recht einfach zu überblickendes beispiel handelt, lässt sich durch einen geübten blick bereits erkennen wie eine Optimierung aussehen könnte. Im ersten Zeitslot ist abzulesen, das 3 Arithmetische operationen und eine Multiplikation durchgeführt werden, somit werden 3 ALU Einheiten und ein Multiplizierer benötigt.Im weiteren verlauf lässt sich unteranderem erkennen das in keinem weiteren zeitzlot mehr als 3 ALU einheiten gebraucht werden, deswegen ist dies auch unsere minimal benötigte anzahl an Resourcen dieses typs. Ganz genau deutlich wird dies durch eine veranschaulichung in einer tabelle.
+Da es sich, um ein recht einfach zu überblickendes beispiel handelt, lässt sich durch einen geübten blick bereits erkennen wie eine Optimierung aussehen könnte. Im ersten Zeitslot ist abzulesen, das 3 Arithmetische operationen und eine Multiplikation durchgeführt werden, somit werden 3 ALU Einheiten und ein Multiplizierer benötigt.Im weiteren verlauf lässt sich unteranderem erkennen das in keinem weiteren zeitzlot mehr als 3 ALU einheiten gebraucht werden, deswegen ist dies auch unsere minimal benötigte anzahl an Resourcen dieses typs. Ganz genau deutlich wird dies durch eine veranschaulichung in einer tabelle.
 \begin{tabular}[h]{ccc}
 Zeitslot&ALU&Multiplizierer\\
 1&3&1\\
@@ -138,20 +138,50 @@ Als vorrausetzung, um überhaupt eine sinnvolle Bindung beziehungsweise Allokier
 Zwei oder mehr Operationen sind mit einander Kompatibel und können an die Gleiche Resource gebunden werden wenn sie nicht mit einander Konkurrieren und wenn sie dem gleichen Resourcen-typen angehören\cite[S.231]{3}\\
 Das bedeutet konkreit, dass aufgaben mit einander kompatibel sind, wenn sie nicht im gleichen Zeitslot neben einander anliegen und wenn sie des gleichen typs sind zum Beispiel Addierer.
 Die entwicklung der ges graphensystems kann grundsätzlich über 2 ansätze erfolgen, zum einen kann ein Kompatiblitätsgraph oder Verträglichkeitsgraph entwickelt werden, dieser graph gibt an welche Operationen verträglich zu einander sind und somit keine probleme darstellen komplemäntar dazu lässt sich durch den Konflikt graphen angeben welche Operationen im konflik zu einander stehen und eine genauere betrachtung bedüfen.\\
-Zusammen gefasst nach  Teich \cite[S. 181-182]{1} lassen sich folgende verträglichkeiten für den kompatiblitätsgraphen aufführen:
+Ein Ressourcen Verträglichkeitsgraf ist definiert durch $ G_+(V,E)$ in denen die Knoten durch $ V = \{v_i;i=1,2,...,n\}$ definiert werden und die Kanten durch $E = \{\{v_i,v_j\}i,j = 1,2,...,n\}$ Die Knoten stellen die Operationen an sich dar, wohingegen die Kanten die Kompatiblen Operationspaare angeben\cite[S.231]{3}.\\
+Zusammen gefasst nach  Teich \cite[S. 181-182]{1} lassen sich folgende verträglichkeiten für den kompatiblitätsgraphen aufführen:\\
 
-\\
-demnach ist eine Schwache verträglichkeit gegeben, wenn zwei knoten des Graphen
+demnach ist eine \textbf{Schwache verträglichkeit} gegeben, wenn zwei knoten des Graphen
+eines Grahen mit einander verbunden sind und des gleichen Types angehören also zum beispiel eine Addition und ein Vergleich, da beide durch eine Arithmetisch logische einheit Verarbeitet werden können.\cite{?}\\
 
-Graph zur betrachtung der Verträglichkeit einzelner Operationen
-zeigt auf einen bliock welche operationen mit einander kombiniert werden können und welche nach folgenden regeln auf keinen fall kombiniert werden können
+\textbf{Ablaufplan verträglich} ist ein graph hingegen, wenn seine Knoten als erste bedingung vom gleichen typ sind, also wie bei der schwachen verträglichkeit zum Beispiel aus 2 operationen vom typ Multiplizierer. Zum zweoten muss die bediingung erfüllt sein, das die starzeit des ersten knoten vor der des zweiten knotens liegen muss. Das bedeutet, dass Knoten die Ablaufverträglich sind nicht in dem selben zeitslot ausgeführt werden dürfen, andernfalls wären sie nicht Ablaufplan vertträglich\cite{?}.\\
 
--Schwach verträglich
-wenn vom gleichen ressourcentyp ?? 
--Ablaufplan verträglich
-alternativ sind
--Stark verträglich
-nicht gleichzeitig sind und mit einem gerichteten graph verbunden 
+Als leztztes definiert sich die \textbf{Starke verträglichkeit}, durch zwei Knoten die wieder vom gleichen typ sind und zudem von einandern abhängig sind. Das bedeutet die beiden knoten sind in einem logischen strang durch einen pfad im ablaufplan mit einander verbunden.\cite{?}
+
+Die Graphische umsetzunge des Verträglichkeitsgraphes mit dem Beispiel aus den vorherigen kapiteln sieht dann wie folgt aus: 
+\begin{figure}[h]
+\center{\includegraphics[scale=0.55]{fig_comp_mult}}
+\caption{Verträglichkeitsgraph Mulitplizierer}
+\label{fig.2}
+\end{figure}\\
+Aus den vorherigen kapiteln, wissen wir bereits, dass für die Optimierung der verschaltung nur ein Multiplizierer benötigt wird und genau das können wir in diesem beispil nun auch grafisch betrachten. Zu sehen ist, dass jeder knoten mit einer kante verbunden ist und somit sind alle Operationen mit einander Ablaufplan verträglich, weswegen der einsatz von nur einem Multiplizierer nun auch Optisch besser nachzuvollziehen ist.\\
+Desweiteren folgt der Verträglichkeitsgraph der Alu. Ein eindeutiges ergebnis ist hier allerdings nicht auf den ersten blick zu sehen, das zeigt, wie schnell selbst sehr siple verschaltungen, sehr komplizierte ausmaße bekommen können. Um dieses Problem zu minimieren wird im weiteren vorgehen mit einer einteilung in sogenannte cliquen gearbeitet. Diese cliquen werden dann farbig im Verträglichkeitsgraph eingezeichnet. 
+
+\begin{figure}[h]
+\center{\includegraphics[scale=0.55]{fig_comp_mult_cliq}}
+\caption{Verträglichkeitsgraph Arithmetisch logische einheit mit Cliquen}
+\label{fig.4}
+\end{figure}
+
+
+
+
+
+
+\begin{figure}[h]
+\center{\includegraphics[scale=0.55]{fig_comp_alu}}
+\caption{Verträglichkeitsgraph Arithmetisch Logische Einheit}
+\label{fig.3}
+\end{figure}
+%Graph zur betrachtung der Verträglichkeit einzelner Operationen
+%zeigt auf einen bliock welche operationen mit einander kombiniert werden können %und welche nach folgenden regeln auf keinen fall kombiniert werden können
+
+%-Schwach verträglich
+%wenn vom gleichen ressourcentyp ?? 
+%-Ablaufplan verträglich
+%alternativ sind
+%-Stark verträglich
+%nicht gleichzeitig sind und mit einem gerichteten graph verbunden 
 
 
 \subsection{Strategien zur Architektur Optimierung}
