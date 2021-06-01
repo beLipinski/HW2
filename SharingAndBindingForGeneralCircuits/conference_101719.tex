@@ -61,7 +61,16 @@ x&y&Out\\
 \subsubsection{Multiplexer}
 Multiplexer werden benutzt, wenn eine Parallele Verarbeitung aus unterschiedlichsten gründen nicht möglich ist, das kann zum einen eine nicht ausreichende Verfügbarkeit an Kanälen sein, aber auch eine bewusste Entscheidung weniger Kanäle aus kosten gründen zu benutzen sein. Dieser schritt kann gewählt werden, wenn Verläufe zwar parallel laufen aber nur exklusiv ausgeführt werden, das bedeutet, dass nach einer elementaren Entscheidung nur einer der beiden Stränge ausgeführt werden kann. Beeindruckend allerdings ist, das Multiplexer trotz ihrer fortgeschrittenen eignenschaften gegenüber den Grundbausteinen, doch recht simple aus genau diesem erzeugt werden kann. So ergibt sich für einen Einfachen Multiplexer das schaltbild aus 2 AND-Gattern, Einem NOT- Gatter und einem OR- Gatter. .....
 \subsubsection{FPGA}
-Der Einsatz von diesen Grundelementen ist für das erreichen des Ziels völlig hinreichend, doch benötigt sie eine sehr hohe fläche, auf der sie Verbaut werden muss. Ein zu erreichendes Ziel ist, die Fläche auf der die schaltung realisiert werden muss zu verringern. Dies ist durch die verwendung von halbleitern und die entwicklung von Integrierten schaltkreisen auch erfolgreich gelungen, allerdings besitzen diese sogenannten IC's den nachteil, das ihre Schaltung wie die einer realisierung mit Bausteinen auch fest gebunden ist. Ein Nachteil, den FPGA (Field Programmable Gate ARRAY) Bauteile nicht besitzen, ihr Vorteil ist die Zusammensetzung aus Zusammengeschalteten Baugruppen aus Logikbausteinen, FlipFlops und derer verbindung mit Multiplexern. In FPGA's kann das Verhalten der Eingänge zu den Ausgängen über...... "Programmiert" werden.
+Der Einsatz von diesen Grundelementen ist für das erreichen des Ziels völlig hinreichend, doch benötigt sie eine sehr hohe fläche, auf der sie Verbaut werden muss. Ein zu erreichendes Ziel ist, die Fläche auf der die schaltung realisiert werden muss zu verringern. Dies ist durch die verwendung von halbleitern und die entwicklung von Integrierten schaltkreisen auch erfolgreich gelungen, allerdings besitzen diese sogenannten IC's den nachteil, das ihre Schaltung wie die einer realisierung mit Bausteinen auch fest gebunden ist. Ein Nachteil, den FPGA (Field Programmable Gate ARRAY) Bauteile nicht besitzen, ihr Vorteil ist die Zusammensetzung aus Zusammengeschalteten Baugruppen aus Logikbausteinen, FlipFlops und derer verbindung mit Multiplexern. In FPGA's kann das Verhalten der Eingänge zu den Ausgängen über{\color{red}...... }"Programmiert" werden.
+\subsection{Strategien zur Architektur Optimierung}
+Mit steigender Komplexität der verschaltungen steigt zwingend auch die anzahl der  zu nutzenden Bauteile, zudem steigt auch die verwendung performaterer Bausteine stetig um die abarbeitung bezüglich leistung und aller zeitlicher deadlines einhalten zu können. Nachteilig ist vor dem hintergrund ebenfall, dass Bausteine mit einer höhreren leistung, oftmals auch eine erhöhten platzbedarf einfordern\cite[S.327]{2}.\\
+Ziel ist es, strategien Umzusetzen, die,  die Chipfläche verringern, ohne dabei die Lesitungsfähigkeit der Schaltung zu beeinflussen. Leider ist dieses Problem nicht mit der einhaltung beider anforderungen zu vereinbaren, wodurch zum Beispiel die verminderung der kosten durch senkung der chip Anzahl und Fläche immer auch zum nachteil der Performance agiert.Der zusammenhang zwischen Fläche und der erzeugten leistungsverminderung ergibt sich aus der Fläche $a$ in der Einheit Gatteräquivalent $(Gate Equivalent GE)$ das die größe des Simplesten gatters wiederspiegelt\cite[S.326]{2} und der Performance die den kehrwert der Ausführungszeit $T_{ges}$ wiederspiegelt $\frac{1}{T_{ges}}$, die sich wieder aus der Takzeit $T_c$ multipliziert mit der Latenz $\lambda$ zusammensetzt
+\cite[S.325-326]{2}.\\
+ Eine Mögliche Realisierung der schaltung mit einer bestimmten Performance, bei einer Bestimmten Fläche lässt sich als punkt in einem diagramm darstellen,dessen achsen sowohl die Chipfläche, die Latenz und den Takt abbilden\cite[S.326]{2}.
+ Dieses vorgehen\cite{?} ist in diesem fall notwendig, da mehr als eine Variable optimiert werden muss, und es dementsprechend mehr als eine gültige lösung dieses Problems gibt. Als mögliches Hilfsmittel kann hier die Pareto-optimierung verwendet werden. Die Pareto-Optimierung erzeugt eine Kompromisslösung durch die Gewichtung jeder einzelfunktion. Die Idee dahinter ist, dass die Gewichtung die Wichtigkeit der Einzelfunktion repräsentiert und ihr bei steigendem gewichti mehr aufmerksamkeit verleit\cite[S.45]{4}
+
+
+
 \subsection{Allocation}
 
 %...ist eigl. Binding wird aber auch mit der betrachtung der zur verfügung stehenden Resourcen in verbinduggebracht 
@@ -133,6 +142,7 @@ Somit wurden in diesem beispiel 5 Alu einheiten die einen anteil von $62,5\%$ au
 \subsection{Sharing}
 das sharing beschreibt zusammen mit dem Binding,  die effektive mehrfachnutzung der Ressourcen, welches der minimierung der verwendeten hardware dient und somit zu reduzierung von Flächen und kosten problemen beiträgt. wobei das ziel des Sharing die frage nach dem Alghoritmus zur optimerung ist und anschließend mit einem Binding endet. In dem Kapitel Binding wurde ein einfach im Kopf zu lösendes Beispiel gezeigt, leider bleibt es in der Realität nicht immer bei so einfach zu lösenden systemen, so dass da schnell der überblick verloren gehen kann und zudem ein system unter umständen nicht zu lösen wäre. Aus diesem grund befasst sich dass sharing mit der frage wie ein vorhandenes system effektiv optimiert werden kann.Zu den Verwendeten Alghoritmen zählen unter anderem aus dem breich der REsource Dominated Circuits das Register sharing, Multiport Memory Binding und das Bus sharing and Binding und für den bereich der general circuits, sind es Unconstrained minimum - Area Binding, Performance Constrained Binding und zu letzt Performance Directed Binding.   
 \section{Grundlegendes}
+
 \subsection{Kompatiblitäts- und Konfliktgraphen}
 Als vorrausetzung, um überhaupt eine sinnvolle Bindung beziehungsweise Allokierung erzeugen zu können muss sich im 1. schritt einmal mit dem eigentlichen problem befasst werden. Um das Problem darstellen zu können wird ein Graph aufgestellt, der die eigenschaften der elemente beschreibt. Dieser Schritt ermöglicht die betrachtung der einzelnen operationen mit einander und stellt auf welche mit einander Kompatibel sind und welche ein kritisches verhalten zu einander aufweisen.\\
 Zwei oder mehr Operationen sind mit einander Kompatibel und können an die Gleiche Resource gebunden werden wenn sie nicht mit einander Konkurrieren und wenn sie dem gleichen Resourcen-typen angehören\cite[S.231]{3}\\
@@ -155,24 +165,18 @@ Die Graphische umsetzunge des Verträglichkeitsgraphes mit dem Beispiel aus den 
 \label{fig.2}
 \end{figure}\\
 Aus den vorherigen kapiteln, wissen wir bereits, dass für die Optimierung der verschaltung nur ein Multiplizierer benötigt wird und genau das können wir in diesem beispil nun auch grafisch betrachten. Zu sehen ist, dass jeder knoten mit einer kante verbunden ist und somit sind alle Operationen mit einander Ablaufplan verträglich, weswegen der einsatz von nur einem Multiplizierer nun auch Optisch besser nachzuvollziehen ist.\\
-Desweiteren folgt der Verträglichkeitsgraph der Alu. Ein eindeutiges ergebnis ist hier allerdings nicht auf den ersten blick zu sehen, das zeigt, wie schnell selbst sehr siple verschaltungen, sehr komplizierte ausmaße bekommen können. Um dieses Problem zu minimieren wird im weiteren vorgehen mit einer einteilung in sogenannte cliquen gearbeitet. Diese cliquen werden dann farbig im Verträglichkeitsgraph eingezeichnet. 
-
 \begin{figure}[h]
-\center{\includegraphics[scale=0.55]{fig_comp_mult_cliq}}
+\center{\includegraphics[scale=0.55]{fig_comp_alu}}
 \caption{Verträglichkeitsgraph Arithmetisch logische einheit mit Cliquen}
 \label{fig.4}
 \end{figure}
-
-
-
-
-
-
+Als nächsten schritt werden nun sogenannte Cliquen eingezeichnet, sie repräsentieren die zusammenfassung Mehrerer Operationen und zeigen ihre zusammenführung auf eine Komponente, so das für jede clique genau eine Komponente eingesetzt wird. Zu sehen ist, das Bei dem Verträglichkeitsgraphen der Mulitplizierer genau eine Clique eingezeichnet werden muss. Da mit steigender Komplexität der aufgabe, auch die Komplexität für das einzeichen der Cliquen steigt, bietet sich dieses verfahren leider nur für die anwendung an simple verschaltungen an, der Grund hierfür ist die klassifizierung dieses problems als NP-Hartes Problem.\cite[S.361]{2}\\
 \begin{figure}[h]
-\center{\includegraphics[scale=0.55]{fig_comp_alu}}
-\caption{Verträglichkeitsgraph Arithmetisch Logische Einheit}
+\center{\includegraphics[scale=0.08]{fig_cliquen}}
+\caption{Ablaufplan und verträglichkeitsgraphen mit Cliquenbildung}
 \label{fig.3}
 \end{figure}
+
 %Graph zur betrachtung der Verträglichkeit einzelner Operationen
 %zeigt auf einen bliock welche operationen mit einander kombiniert werden können %und welche nach folgenden regeln auf keinen fall kombiniert werden können
 
@@ -184,7 +188,7 @@ Desweiteren folgt der Verträglichkeitsgraph der Alu. Ein eindeutiges ergebnis i
 %nicht gleichzeitig sind und mit einem gerichteten graph verbunden 
 
 
-\subsection{Strategien zur Architektur Optimierung}
+
 
 \subsection{Resource Dominated circuits}
 da probleme leider ein wenig komplizierter 
@@ -213,6 +217,7 @@ ganz allgemein wird jetzt auch die verzögerung durch steuerlogik und die verkab
 \bibitem{1} Jürgen Teich, Christian Haubelt, Digitale Hardware/Software-Systeme, Synthese und Optimierung, 2. Auflage,Springer,2007
 \bibitem{2} Dr.Walter Lange, Prof.Dr.Martin Bogdan, Entwurf und Syntese von Eingebetteten Systhemen, Ein Lehrbuch,Oldenbourg Verlag München, 2013
 \bibitem{3} DEMICH
+\bibitem{4} Martin Pieper, Mathematische Optimierung, Eine Einführung in die Kontinuierliche Optimierung mit Beispielen,Springer Spektrum,2017
 \end{thebibliography}
 \vspace{12pt}
 

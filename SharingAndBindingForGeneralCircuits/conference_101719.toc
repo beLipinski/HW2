@@ -5,13 +5,13 @@
 \contentsline {subsubsection}{\numberline {\mbox {I-B}2}OR-Gatter}{1}%
 \contentsline {subsubsection}{\numberline {\mbox {I-B}3}Multiplexer}{1}%
 \contentsline {subsubsection}{\numberline {\mbox {I-B}4}FPGA}{1}%
-\contentsline {subsection}{\numberline {\mbox {I-C}}Allocation}{1}%
-\contentsline {subsection}{\numberline {\mbox {I-D}}Binding}{1}%
-\contentsline {subsection}{\numberline {\mbox {I-E}}Sharing}{2}%
-\contentsline {section}{\numberline {II}Grundlegendes}{2}%
-\contentsline {subsection}{\numberline {\mbox {II-A}}Kompatiblitäts- und Konfliktgraphen}{2}%
-\contentsline {subsection}{\numberline {\mbox {II-B}}Strategien zur Architektur Optimierung}{3}%
-\contentsline {subsection}{\numberline {\mbox {II-C}}Resource Dominated circuits}{3}%
+\contentsline {subsection}{\numberline {\mbox {I-C}}Strategien zur Architektur Optimierung}{1}%
+\contentsline {subsection}{\numberline {\mbox {I-D}}Allocation}{1}%
+\contentsline {subsection}{\numberline {\mbox {I-E}}Binding}{2}%
+\contentsline {subsection}{\numberline {\mbox {I-F}}Sharing}{3}%
+\contentsline {section}{\numberline {II}Grundlegendes}{3}%
+\contentsline {subsection}{\numberline {\mbox {II-A}}Kompatiblitäts- und Konfliktgraphen}{3}%
+\contentsline {subsection}{\numberline {\mbox {II-B}}Resource Dominated circuits}{4}%
 \contentsline {section}{\numberline {III}General Circuits}{4}%
 \contentsline {subsection}{\numberline {\mbox {III-A}}Allgm.}{4}%
 \contentsline {subsection}{\numberline {\mbox {III-B}}Baugruppen}{4}%
