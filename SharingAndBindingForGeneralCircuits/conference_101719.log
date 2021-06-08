@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.30)  1 JUN 2021 20:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.30)  7 JUN 2021 20:47
 entering extended mode
 **./conference_101719.tex
 (conference_101719.tex
@@ -324,12 +324,27 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
+Underfull \hbox (badness 1377) in paragraph at lines 37--38
+\OT1/ptm/m/n/10 wird die Be-tra-ch-tung zeitlicher und fi-nanzieller As-pekte
+ []
+
+
 Underfull \hbox (badness 2261) in paragraph at lines 40--42
 []\OT1/ptm/m/n/10 Realisierbar wer-den elek-trische Ver-schal-tun-gen in der
  []
 
 
+Underfull \hbox (badness 1609) in paragraph at lines 62--63
+\OT1/ptm/m/n/10 Verf[]ugbarkeit an Kan[]alen sein, aber auch die be-wusste
+ []
+
+
 LaTeX Warning: Citation `?' on page 1 undefined on input line 70.
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 66--71
+\OT1/ptm/m/n/10 Optimierung ver-wen-det wer-den. Die Pareto-Optimierung
+ []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 84--87
@@ -497,7 +512,7 @@ sers/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
 C:/Users/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
 fb><C:/Users/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on conference_101719.pdf (6 pages, 1807800 bytes).
+Output written on conference_101719.pdf (6 pages, 1807694 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

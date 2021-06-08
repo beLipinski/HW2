@@ -15,7 +15,7 @@
 \title{Sharing and Binding for General Circuits\\}
 
 \author{\IEEEauthorblockN{Benedikt Lipinski}
-\IEEEauthorblockA{\textit{Interaktionstechnik und Design)} \\
+\IEEEauthorblockA{\textit{Interaktionstechnik und Design} \\
 \textit{Hochschule Hamm Lippstadt}\\
 Lippstadt, Germany \\
 benedikt.lipinski@stud.hshl.de}
@@ -32,15 +32,15 @@ benedikt.lipinski@stud.hshl.de}
 
 \newpage
 \section{Introduction}
-Durch das menschliche verlangen Problemstellungen zu-gunsten schwindender Komplexität und erhöhtem Komfort zu automatisieren und zu brechen, wurden genau diese Anforderungen auf die elektrischer Schaltungen umgelegt. 
+Durch das menschliche Verlangen, Problemstellungen zugunsten schwindender Komplexität und erhöhten Komforts zu automatisieren und zu brechen, wurden genau diese Anforderungen auf diejenigen elektrischer Schaltungen umgelegt. 
 \subsection{Problemstellung}
-Nicht erst durch Moderne Entwicklungen, wie digitale Vernetzung mit dem Internet der dinge  oder das Autonome Fahren wird die Betrachtung,  Zeitliche und Finanzielle Aspekte für die entwicklung multidimensionaler Systeme notwendig. Allerdings lassen genau diese Entwicklungen, die Komplexität sprunghaft ansteigen.
+Nicht erst durch moderne Entwicklungen wie digitale Vernetzung mit dem Internet der Dinge  oder das autonome Fahren wird die Betrachtung zeitlicher und finanzieller Aspekte für die Entwicklung multidimensionaler Systeme notwendig. Allerdings lassen genau diese Entwicklungen die Komplexität sprunghaft ansteigen.
 
 \subsection{Logische Bausteine}
-Realisierbar werden elektrische Verschaltungen in der Digitaltechnik erst durch den einsatz sogenannter Logikbausteine, die mit einander kombiniert ein vorher genau bestimmtes verhalten der geplanten Schaltung verursachen.
-Hierbei übernehmen verschiedene Bausteine verschiedene Aufgaben, die mal weniger und mal mehr kompliziertere Operationen beinhalten. 
+Realisierbar werden elektrische Verschaltungen in der Digitaltechnik erst durch den Einsatz sogenannter Logikbausteine, die miteinander kombiniert ein vorher genau bestimmtes Verhalten der geplanten Schaltung verursachen.
+Hierbei übernehmen verschiedene Bausteine verschiedene Aufgaben, die mal weniger und mal mehr komplizierte Operationen beinhalten. 
 \subsubsection{AND-Gatter}
-Eine der Grundoperationen, die in fast jeder schaltung zu finden ist, ist die AND zu deutsch die UND Operation. hierbei wird der eingang erst auf logisch 1 geschaltet, wenn alle eingänge dies ebenfalls sind.\\
+Eine der Grundoperationen, die in fast jeder Schaltung zu finden ist, ist die AND-Operation, zu deutsch die UND-Operation. Hierbei wird der Eingang erst auf logisch 1 geschaltet, wenn alle Eingänge dies ebenfalls sind.\\
 \begin{tabular}[h]{ccc}
 x&y&Out\\
 0&0&0\\
@@ -49,7 +49,7 @@ x&y&Out\\
 1&1&1\\
 \end{tabular}
 \subsubsection{OR-Gatter}
-Das Ergebnis des OR-Gatters ist in dem Fall Wahr, wenn einer seiner Eingänge Wahr ist.\\
+Das Ergebnis des OR-Gatters ist in dem Fall wahr, wenn einer seiner Eingänge wahr ist.\\
 \begin{tabular}[h]{ccc}
 x&y&Out\\
 0&0&0\\
@@ -57,17 +57,17 @@ x&y&Out\\
 1&0&1\\
 1&1&1\\
 \end{tabular}
-\\Simple Schaltungen lassen sich durch das gezielte aneinanderreihen von AND und OR Gattern gut realisieren, sollte aber 
+\\Simple Schaltungen lassen sich durch das gezielte Aneinanderreihen von AND- und OR-Gattern gut realisieren, sollte aber 
 \subsubsection{Multiplexer}
-Multiplexer werden benutzt, wenn eine Parallele Verarbeitung aus unterschiedlichsten gründen nicht möglich ist, das kann zum einen eine nicht ausreichende Verfügbarkeit an Kanälen sein, aber auch eine bewusste Entscheidung weniger Kanäle aus kosten gründen zu benutzen sein. Dieser schritt kann gewählt werden, wenn Verläufe zwar parallel laufen aber nur exklusiv ausgeführt werden, das bedeutet, dass nach einer elementaren Entscheidung nur einer der beiden Stränge ausgeführt werden kann. Beeindruckend allerdings ist, das Multiplexer trotz ihrer fortgeschrittenen eignenschaften gegenüber den Grundbausteinen, doch recht simple aus genau diesem erzeugt werden kann. So ergibt sich für einen Einfachen Multiplexer das schaltbild aus 2 AND-Gattern, Einem NOT- Gatter und einem OR- Gatter. .....
+Multiplexer werden genutzt, wenn eine parallele Verarbeitung aus unterschiedlichsten Gründen nicht möglich ist. Das kann zum einen eine nicht ausreichende Verfügbarkeit an Kanälen sein, aber auch die bewusste Entscheidung, weniger Kanäle aus Kostengründen zu benutzen, sein. Dieser Schritt kann gewählt werden, wenn Verläufe zwar parallel laufen, aber nur exklusiv ausgeführt werden. Das bedeutet, dass nach einer elementaren Entscheidung nur einer der beiden Stränge ausgeführt werden kann. Beeindruckend allerdings ist, dass Multiplexer trotz ihrer fortgeschrittenen Eigenschaften gegenüber der Grundbausteine doch recht simpel aus genau diesem erzeugt werden können. So ergibt sich für einen einfachen Multiplexer das Schaltbild aus zwei AND-Gattern, einem NOT-Gatter und einem OR- Gatter. .....
 \subsubsection{FPGA}
-Der Einsatz von diesen Grundelementen ist für das erreichen des Ziels völlig hinreichend, doch benötigt sie eine sehr hohe fläche, auf der sie Verbaut werden muss. Ein zu erreichendes Ziel ist, die Fläche auf der die schaltung realisiert werden muss zu verringern. Dies ist durch die verwendung von halbleitern und die entwicklung von Integrierten schaltkreisen auch erfolgreich gelungen, allerdings besitzen diese sogenannten IC's den nachteil, das ihre Schaltung wie die einer realisierung mit Bausteinen auch fest gebunden ist. Ein Nachteil, den FPGA (Field Programmable Gate ARRAY) Bauteile nicht besitzen, ihr Vorteil ist die Zusammensetzung aus Zusammengeschalteten Baugruppen aus Logikbausteinen, FlipFlops und derer verbindung mit Multiplexern. In FPGA's kann das Verhalten der Eingänge zu den Ausgängen über{\color{red}...... }"Programmiert" werden.
-\subsection{Strategien zur Architektur Optimierung}
-Mit steigender Komplexität der verschaltungen steigt zwingend auch die anzahl der  zu nutzenden Bauteile, zudem steigt auch die verwendung performaterer Bausteine stetig um die abarbeitung bezüglich leistung und aller zeitlicher deadlines einhalten zu können. Nachteilig ist vor dem hintergrund ebenfall, dass Bausteine mit einer höhreren leistung, oftmals auch eine erhöhten platzbedarf einfordern\cite[S.327]{2}.\\
-Ziel ist es, strategien Umzusetzen, die,  die Chipfläche verringern, ohne dabei die Lesitungsfähigkeit der Schaltung zu beeinflussen. Leider ist dieses Problem nicht mit der einhaltung beider anforderungen zu vereinbaren, wodurch zum Beispiel die verminderung der kosten durch senkung der chip Anzahl und Fläche immer auch zum nachteil der Performance agiert.Der zusammenhang zwischen Fläche und der erzeugten leistungsverminderung ergibt sich aus der Fläche $a$ in der Einheit Gatteräquivalent $(Gate Equivalent GE)$ das die größe des Simplesten gatters wiederspiegelt\cite[S.326]{2} und der Performance die den kehrwert der Ausführungszeit $T_{ges}$ wiederspiegelt $\frac{1}{T_{ges}}$, die sich wieder aus der Takzeit $T_c$ multipliziert mit der Latenz $\lambda$ zusammensetzt
+Der Einsatz von diesen Grundelementen ist für das Erreichen des Ziels völlig hinreichend, doch benötigen sie eine sehr hohe Fläche, auf der sie verbaut werden müssen. Ein zu erreichendes Ziel ist, die Fläche auf der die Schaltung realisiert werden muss, zu verringern. Dies ist durch die Verwendung von Halbleitern und die Entwicklung von integrierten Schaltkreisen auch erfolgreich gelungen, allerdings besitzen diese sogenannten ICs den Nachteil, dass ihre Schaltung- wie die einer Realisierung mit Bausteinen- auch fest gebunden ist. Ein Nachteil, den FPGA (Field Programmable Gate ARRAY) Bauteile nicht besitzen, ihr Vorteil ist die Zusammensetzung aus zusammengeschalteten Baugruppen aus Logikbausteinen, FlipFlops und deren Verbindung mit Multiplexern. In FPGAs kann das Verhalten der Eingänge zu den Ausgängen über{\color{red}...... }"programmiert" werden.
+\subsection{Strategien zur Architektur-Optimierung}
+Mit steigender Komplexität der Verschaltungen steigt zwingend auch die Anzahl der  zu nutzenden Bauteile. Zudem steigt auch die Verwendung performaterer Bausteine stetig, um die Abarbeitung bezüglich Leistung und aller zeitlichen Deadlines einhalten zu können. Nachteilig ist vor dem Hintergrund ebenfalls, dass Bausteine mit einer höheren Leistung oftmals auch einen erhöhten Platzbedarf einfordern\cite[S.327]{2}.\\
+Ziel ist es, Strategien umzusetzen, die die Chipfläche verringern, ohne dabei die Leistungsfähigkeit der Schaltung zu beeinflussen. Leider ist dieses Problem nicht mit der Einhaltung beider Anforderungen zu vereinbaren, wodurch zum Beispiel die Verminderung der Kosten durch Senkung der Chip-Anzahl und Fläche immer auch zum Nachteil der Performance agiert. Der Zusammenhang zwischen Fläche und der erzeugten Leistungsverminderung ergibt sich aus der Fläche $a$ in der Einheit Gatteräquivalent $(Gate Equivalent GE)$, das die Größe des simpelsten Gatters widerspiegelt\cite[S.326]{2} und der Performance, die den Kehrwert der Ausführungszeit $T_{ges}$ widerspiegelt $\frac{1}{T_{ges}}$, die sich wieder aus der Taktzeit $T_c$ multipliziert mit der Latenz $\lambda$ zusammensetzt
 \cite[S.325-326]{2}.\\
- Eine Mögliche Realisierung der schaltung mit einer bestimmten Performance, bei einer Bestimmten Fläche lässt sich als punkt in einem diagramm darstellen,dessen achsen sowohl die Chipfläche, die Latenz und den Takt abbilden\cite[S.326]{2}.
- Dieses vorgehen\cite{?} ist in diesem fall notwendig, da mehr als eine Variable optimiert werden muss, und es dementsprechend mehr als eine gültige lösung dieses Problems gibt. Als mögliches Hilfsmittel kann hier die Pareto-optimierung verwendet werden. Die Pareto-Optimierung erzeugt eine Kompromisslösung durch die Gewichtung jeder einzelfunktion. Die Idee dahinter ist, dass die Gewichtung die Wichtigkeit der Einzelfunktion repräsentiert und ihr bei steigendem gewichti mehr aufmerksamkeit verleit\cite[S.45]{4}
+ Eine mögliche Realisierung der Schaltung mit einer bestimmten Performance bei einer bestimmten Fläche lässt sich als Punkt in einem Diagramm darstellen, dessen Achsen sowohl die Chipfläche, die Latenz und den Takt abbilden\cite[S.326]{2}.
+ Dieses Vorgehen\cite{?} ist in diesem Fall notwendig, da mehr als eine Variable optimiert werden muss, und es dementsprechend mehr als eine gültige Lösung dieses Problems gibt. Als mögliches Hilfsmittel kann hier die Pareto-Optimierung verwendet werden. Die Pareto-Optimierung erzeugt eine Kompromisslösung durch die Gewichtung jeder Einzelfunktion. Die Idee dahinter ist, dass die Gewichtung die Wichtigkeit der Einzelfunktion repräsentiert und ihr bei steigendem Gewicht mehr Aufmerksamkeit verleiht\cite[S.45]{4}.
 
 
 
