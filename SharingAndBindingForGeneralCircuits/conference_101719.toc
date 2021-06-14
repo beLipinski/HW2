@@ -6,7 +6,7 @@
 \contentsline {subsubsection}{\numberline {\mbox {I-B}3}Multiplexer}{1}%
 \contentsline {subsubsection}{\numberline {\mbox {I-B}4}FPGA}{1}%
 \contentsline {subsection}{\numberline {\mbox {I-C}}Strategien zur Architektur-Optimierung}{1}%
-\contentsline {subsection}{\numberline {\mbox {I-D}}Allocation}{1}%
+\contentsline {subsection}{\numberline {\mbox {I-D}}Allocation}{2}%
 \contentsline {subsection}{\numberline {\mbox {I-E}}Binding}{2}%
 \contentsline {subsection}{\numberline {\mbox {I-F}}Sharing}{3}%
 \contentsline {section}{\numberline {II}Grundlegendes}{3}%

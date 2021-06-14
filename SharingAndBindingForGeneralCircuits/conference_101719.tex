@@ -67,9 +67,7 @@ Mit steigender Komplexität der Verschaltungen steigt zwingend auch die Anzahl d
 Ziel ist es, Strategien umzusetzen, die die Chipfläche verringern, ohne dabei die Leistungsfähigkeit der Schaltung zu beeinflussen. Leider ist dieses Problem nicht mit der Einhaltung beider Anforderungen zu vereinbaren, wodurch zum Beispiel die Verminderung der Kosten durch Senkung der Chip-Anzahl und Fläche immer auch zum Nachteil der Performance agiert. Der Zusammenhang zwischen Fläche und der erzeugten Leistungsverminderung ergibt sich aus der Fläche $a$ in der Einheit Gatteräquivalent $(Gate Equivalent GE)$, das die Größe des simpelsten Gatters widerspiegelt\cite[S.326]{2} und der Performance, die den Kehrwert der Ausführungszeit $T_{ges}$ widerspiegelt $\frac{1}{T_{ges}}$, die sich wieder aus der Taktzeit $T_c$ multipliziert mit der Latenz $\lambda$ zusammensetzt
 \cite[S.325-326]{2}.\\
  Eine mögliche Realisierung der Schaltung mit einer bestimmten Performance bei einer bestimmten Fläche lässt sich als Punkt in einem Diagramm darstellen, dessen Achsen sowohl die Chipfläche, die Latenz und den Takt abbilden\cite[S.326]{2}.
- Dieses Vorgehen\cite{?} ist in diesem Fall notwendig, da mehr als eine Variable optimiert werden muss, und es dementsprechend mehr als eine gültige Lösung dieses Problems gibt. Als mögliches Hilfsmittel kann hier die Pareto-Optimierung verwendet werden. Die Pareto-Optimierung erzeugt eine Kompromisslösung durch die Gewichtung jeder Einzelfunktion. Die Idee dahinter ist, dass die Gewichtung die Wichtigkeit der Einzelfunktion repräsentiert und ihr bei steigendem Gewicht mehr Aufmerksamkeit verleiht\cite[S.45]{4}.
-
-
+ Dieses Vorgehen\cite{?} ist in diesem Fall notwendig, da mehr als eine Variable optimiert werden muss, und es dementsprechend mehr als eine gültige Lösung dieses Problems gibt. Als mögliches Hilfsmittel kann hier die Pareto-Optimierung verwendet werden. Die Pareto-Optimierung erzeugt eine Kompromisslösung durch die Gewichtung jeder Einzelfunktion. Die Idee dahinter ist, dass die Gewichtung die Wichtigkeit der Einzelfunktion repräsentiert und ihr bei steigendem Gewicht mehr Aufmerksamkeit verleiht\cite[S.45]{4}. Als ergebnis erhalten wir sogenannte Pareto punkte, diese punkte in unserem entwurfsraum stellen verschiedenste verhältnisse unserer optimierungs variablen dar. Eine Pareto optimale lösung, ist die lösung, die gülltig gegenüber aller gestellten anforderungen ist und die das best mögliche ergebnis aller variablen liefert, ohne das sich eine verschlechtert nur um eine andere weiter zu optimieren.
 
 \subsection{Allocation}
 
@@ -170,7 +168,7 @@ Aus den vorherigen kapiteln, wissen wir bereits, dass für die Optimierung der v
 \caption{Verträglichkeitsgraph Arithmetisch logische einheit mit Cliquen}
 \label{fig.4}
 \end{figure}
-Als nächsten schritt werden nun sogenannte Cliquen eingezeichnet, sie repräsentieren die zusammenfassung Mehrerer Operationen und zeigen ihre zusammenführung auf eine Komponente, so das für jede clique genau eine Komponente eingesetzt wird. Zu sehen ist, das Bei dem Verträglichkeitsgraphen der Mulitplizierer genau eine Clique eingezeichnet werden muss. Da mit steigender Komplexität der aufgabe, auch die Komplexität für das einzeichen der Cliquen steigt, bietet sich dieses verfahren leider nur für die anwendung an simple verschaltungen an, der Grund hierfür ist die klassifizierung dieses problems als NP-Hartes Problem.\cite[S.361]{2}\\
+Als nächsten schritt werden nun sogenannte Cliquen eingezeichnet, sie repräsentieren die zusammenfassung Mehrerer Operationen und zeigen ihre zusammenführung auf eine Komponente, so das für jede clique genau eine Komponente eingesetzt wird. Zu sehen ist, das Bei dem Verträglichkeitsgraphen in diesem Beispiel für die Mulitplizierer genau eine Clique eingezeichnet werden muss. Da mit steigender Komplexität der aufgabe, auch die Komplexität für das einzeichen der Cliquen steigt, bietet sich dieses verfahren leider nur für die anwendung an simple verschaltungen an, der Grund hierfür ist die klassifizierung dieses problems als NP-Hartes Problem.\cite[S.361]{2}\\
 \begin{figure}[h]
 \center{\includegraphics[scale=0.08]{fig_cliquen}}
 \caption{Ablaufplan und verträglichkeitsgraphen mit Cliquenbildung}
@@ -197,6 +195,12 @@ behamndelt wir die grundlegende optimierung mit dem grundlagen wissen aus Konfli
 
 z.b mittels register sharing
 -G.micheli S 156 
+
+
+
+
+
+
 \section{General Circuits}
 \subsection{Allgm.}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.30)  9 JUN 2021 09:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.30)  14 JUN 2021 16:52
 entering extended mode
 **./conference_101719.tex
 (conference_101719.tex
@@ -347,6 +347,13 @@ Underfull \hbox (badness 3260) in paragraph at lines 66--71
  []
 
 
+Underfull \hbox (badness 1442) in paragraph at lines 66--71
+\OT1/ptm/m/n/10 Einzel-funk-tion. Die Idee dahin-ter ist, dass die Gewich-
+ []
+
+[1
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 84--87
 \OT1/ptm/m/n/10 Damit w[]urde, wenn vom Re-sour-centyp Mulit-plizier:
  []
@@ -357,9 +364,6 @@ Underfull \hbox (badness 3417) in paragraph at lines 84--87
 g ste-hen die
  []
 
-[1
-
-]
 <fig_bsp_binding.png, id=19, 362.5545pt x 287.8755pt>
 File: fig_bsp_binding.png Graphic file (type png)
 <use fig_bsp_binding.png>
@@ -377,9 +381,6 @@ Underfull \hbox (badness 2134) in paragraph at lines 88--95
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -493,10 +494,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3847 strings out of 480932
- 56554 string characters out of 2899905
- 309573 words of memory out of 3000000
- 19697 multiletter control sequences out of 15000+200000
+ 3848 strings out of 480932
+ 56562 string characters out of 2899905
+ 310573 words of memory out of 3000000
+ 19698 multiletter control sequences out of 15000+200000
  563415 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,8n,37p,1112b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -512,7 +513,7 @@ sers/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
 C:/Users/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
 fb><C:/Users/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on conference_101719.pdf (6 pages, 1807696 bytes).
+Output written on conference_101719.pdf (6 pages, 1808238 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
