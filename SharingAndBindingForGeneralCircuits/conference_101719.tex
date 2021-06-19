@@ -189,12 +189,14 @@ Als nächsten schritt werden nun sogenannte Cliquen eingezeichnet, sie repräsen
 
 
 \subsection{Resource Dominated circuits}
-da probleme leider ein wenig komplizierter 
+Das "Sharing and Binding for Resource Dominated Circuits" (Verteilung und Bindung für Resourcen dominierte Schaltkreise) Bedeutet, im folgenden die umsetzung und kombinierung, des Wissens und der Grundlagen aus den voran gegangen Abschnitten.
+Zur Erinnerung ist, das gesuchte ergebnis eine Bindung, das bedeutet eine zuordnung von tatsächlicher hardware und Operationen in denen eine maximale menge an Operationen einer minimalen menge an Hardware zugeordnet wird. hierfür ist im vorfeld zwingen festzustellen ob nicht druch andere dynamische umwelteinflüssen und anforderungen, eine grundsetzliche begrenzung der zur verfügung stehenden harware und fläche besteht (allokierung). Desweiteren, um überhaupt festellen zu können, welche operationen sich auf der selben hardware kombinieren lassen, muss ein Kompatiblitäts-/Konflikt-graph aufgestellt werden, mit dessen ergebnis sich operationen zu Cliquen bündeln lassen.
+Leider ist die Lösung des vorliegenden problems nicht derart einfach, als einziges ziel lediglich die fläche und somit den preis der verschaltung zu optimieren, gerade in Echtezeitsystemen muss auch immer die aufmerksamkeit zu gleichen teilen auf der einhaltung der zeitlichen vorgaben bleiben.
+Deswegen betrachtet das sharing and Binding für Resource Dominated Circuits, die Optimierung der Schaltung, bezüglich Fläche(Kosten) und  Latenz(Zeitschranken), mittels der Optimierung der wirkenden SChaltung mittels verminderung der eingesetzten Hardware und doppelnutzung dieser.\cite[S. 156]{3} 
 
-behamndelt wir die grundlegende optimierung mit dem grundlagen wissen aus Konflikt und Optimum graph 
 
-z.b mittels register sharing
--G.micheli S 156 
+
+%prüfen lassen ! 
 
 
 
@@ -202,9 +204,9 @@ z.b mittels register sharing
 
 
 \section{General Circuits}
+Die betrachtung einer Schaltung unter dem aspekt der REsource Dominated Circuits ähnelt allerdings eher der betrachtung einer Idealen Komponete, als einer in denen auch störgrößen und andere umwelteinflüsse einer gewichteten zuwendung erfahren.
 \subsection{Allgm.}
-
-ganz allgemein wird jetzt auch die verzögerung durch steuerlogik und die verkabeluing betrachtet, also wie man so schön sagt ein reale verschaltung
+Aus diesem Grund wird für das Sharing and Binding for General Circuits ( Verteilung und Bindung für Generelle schaltkreise) nicht nur latenz und fläche der Operierenden Elektronik betrachtet, sondern auch derer, die steuernde und speichernde eigenschaften besitzen, zudem wird auch die verkabelung dieser nicht außen vor gelassen.\cite[S. 156]{3}
 \subsection{Baugruppen}
  \subsubsection{Register}
  \subsubsection{Steuerlogik}

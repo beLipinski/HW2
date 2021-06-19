@@ -18,11 +18,11 @@
 \contentsline {subsubsection}{\numberline {\mbox {III-B}1}Register}{4}%
 \contentsline {subsubsection}{\numberline {\mbox {III-B}2}Steuerlogik}{4}%
 \contentsline {subsubsection}{\numberline {\mbox {III-B}3}Verkabelung}{4}%
-\contentsline {subsubsection}{\numberline {\mbox {III-B}4}kontroll einheiten}{4}%
-\contentsline {section}{\numberline {IV}Sharing and Binding for General Circuits}{4}%
-\contentsline {subsection}{\numberline {\mbox {IV-A}}Unconstrained minimum - Area Binding}{4}%
-\contentsline {subsection}{\numberline {\mbox {IV-B}}Performance Constrained Binding}{4}%
-\contentsline {subsection}{\numberline {\mbox {IV-C}}Performance Directed Binding}{4}%
-\contentsline {section}{\numberline {V}Gleichnis,vorgestellter Algorithmen}{4}%
-\contentsline {section}{\numberline {VI}Ausblick}{4}%
-\contentsline {section}{References}{4}%
+\contentsline {subsubsection}{\numberline {\mbox {III-B}4}kontroll einheiten}{5}%
+\contentsline {section}{\numberline {IV}Sharing and Binding for General Circuits}{5}%
+\contentsline {subsection}{\numberline {\mbox {IV-A}}Unconstrained minimum - Area Binding}{5}%
+\contentsline {subsection}{\numberline {\mbox {IV-B}}Performance Constrained Binding}{5}%
+\contentsline {subsection}{\numberline {\mbox {IV-C}}Performance Directed Binding}{5}%
+\contentsline {section}{\numberline {V}Gleichnis,vorgestellter Algorithmen}{5}%
+\contentsline {section}{\numberline {VI}Ausblick}{5}%
+\contentsline {section}{References}{5}%
