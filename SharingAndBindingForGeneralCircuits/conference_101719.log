@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.30)  19 JUN 2021 13:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.30)  19 JUN 2021 14:52
 entering extended mode
 **./conference_101719.tex
 (conference_101719.tex
@@ -457,12 +457,7 @@ Package pdftex.def Info: fig_comp_mult.png  used on input line 161.
 File: fig_comp_alu.png Graphic file (type png)
 <use fig_comp_alu.png>
 Package pdftex.def Info: fig_comp_alu.png  used on input line 167.
-(pdftex.def)             Requested size: 298.77715pt x 252.40375pt.
-
-Overfull \hbox (46.77715pt too wide) in paragraph at lines 167--168
- [] 
- []
-
+(pdftex.def)             Requested size: 244.451pt x 206.50961pt.
 <fig_cliquen.png, id=27, 3521.155pt x 2489.3pt>
 File: fig_cliquen.png Graphic file (type png)
 <use fig_cliquen.png>
@@ -516,7 +511,7 @@ sers/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
 C:/Users/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
 fb><C:/Users/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on conference_101719.pdf (7 pages, 1810519 bytes).
+Output written on conference_101719.pdf (7 pages, 1811666 bytes).
 PDF statistics:
  72 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -16,8 +16,8 @@
 \contentsline {subsection}{\numberline {\mbox {III-A}}Allgm.}{4}%
 \contentsline {subsection}{\numberline {\mbox {III-B}}Baugruppen}{4}%
 \contentsline {subsubsection}{\numberline {\mbox {III-B}1}Register}{4}%
-\contentsline {subsubsection}{\numberline {\mbox {III-B}2}Steuerlogik}{4}%
-\contentsline {subsubsection}{\numberline {\mbox {III-B}3}Verkabelung}{4}%
+\contentsline {subsubsection}{\numberline {\mbox {III-B}2}Steuerlogik}{5}%
+\contentsline {subsubsection}{\numberline {\mbox {III-B}3}Verkabelung}{5}%
 \contentsline {subsubsection}{\numberline {\mbox {III-B}4}kontroll einheiten}{5}%
 \contentsline {section}{\numberline {IV}Sharing and Binding for General Circuits}{5}%
 \contentsline {subsection}{\numberline {\mbox {IV-A}}Unconstrained minimum - Area Binding}{5}%
