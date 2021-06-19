@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.30)  19 JUN 2021 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.30)  19 JUN 2021 14:56
 entering extended mode
 **./conference_101719.tex
 (conference_101719.tex
@@ -306,76 +306,68 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 ) [0
 
 
-{C:/Users/bened/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (conference
-_101719.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
-
-("C:\Users\bened\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
-("C:\Users\bened\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
-\tf@toc=\write3
-\openout3 = `conference_101719.toc'.
-
- [0
-
-
-]
-Underfull \hbox (badness 1377) in paragraph at lines 37--38
+{C:/Users/bened/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 1377) in paragraph at lines 34--35
 \OT1/ptm/m/n/10 wird die Be-tra-ch-tung zeitlicher und fi-nanzieller As-pekte
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 40--42
+Underfull \hbox (badness 2261) in paragraph at lines 37--39
 []\OT1/ptm/m/n/10 Realisierbar wer-den elek-trische Ver-schal-tun-gen in der
  []
 
+LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
 
-Underfull \hbox (badness 1609) in paragraph at lines 62--63
+("C:\Users\bened\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+
+("C:\Users\bened\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 1609) in paragraph at lines 59--60
 \OT1/ptm/m/n/10 Verf[]ugbarkeit an Kan[]alen sein, aber auch die be-wusste
  []
 
 
-LaTeX Warning: Citation `?' on page 1 undefined on input line 70.
+LaTeX Warning: Citation `?' on page 1 undefined on input line 67.
 
 
-Underfull \hbox (badness 3260) in paragraph at lines 66--71
+Underfull \hbox (badness 3260) in paragraph at lines 63--68
 \OT1/ptm/m/n/10 Optimierung ver-wen-det wer-den. Die Pareto-Optimierung
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 66--71
+Underfull \hbox (badness 1442) in paragraph at lines 63--68
 \OT1/ptm/m/n/10 Einzel-funk-tion. Die Idee dahin-ter ist, dass die Gewich-
  []
 
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 82--85
+Underfull \hbox (badness 10000) in paragraph at lines 79--82
 \OT1/ptm/m/n/10 Damit w[]urde, wenn vom Re-sour-centyp Mulit-plizier:
  []
 
 
-Underfull \hbox (badness 3417) in paragraph at lines 82--85
+Underfull \hbox (badness 3417) in paragraph at lines 79--82
 \OML/cmm/m/it/10 r[]$\OT1/ptm/m/n/10 ,Beispielweise 1 Ein-heiten zur verf[]ugun
 g ste-hen die
  []
 
-<fig_bsp_binding.png, id=19, 362.5545pt x 287.8755pt>
+<fig_bsp_binding.png, id=16, 362.5545pt x 287.8755pt>
 File: fig_bsp_binding.png Graphic file (type png)
 <use fig_bsp_binding.png>
-Package pdftex.def Info: fig_bsp_binding.png  used on input line 89.
+Package pdftex.def Info: fig_bsp_binding.png  used on input line 86.
 (pdftex.def)             Requested size: 199.4056pt x 158.332pt.
 
-Underfull \hbox (badness 1490) in paragraph at lines 86--93
+Underfull \hbox (badness 1490) in paragraph at lines 83--90
 []\OT1/ptm/m/n/10 Im un-ter-schied zur Al-lok-ierung wird in der Bindung
  []
 
 
-Underfull \hbox (badness 2134) in paragraph at lines 86--93
+Underfull \hbox (badness 2134) in paragraph at lines 83--90
 \OT1/ptm/m/n/10 schlielich fest-gelegt welche Re-source welche op-er-a-tion
  []
 
@@ -386,85 +378,85 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <./fig_bsp_binding.png>]
-Underfull \hbox (badness 2837) in paragraph at lines 145--151
+Underfull \hbox (badness 2837) in paragraph at lines 142--148
 \OT1/ptm/m/n/10 beziehungsweise Al-lok-ierung erzeu-gen zu k[]onnen muss
  []
 
 
-Underfull \hbox (badness 3209) in paragraph at lines 145--151
+Underfull \hbox (badness 3209) in paragraph at lines 142--148
 \OT1/ptm/m/n/10 Kom-pat-i-b-lit[]atsgraph oder Vertr[]aglichkeitsgraph en-twick
 -elt
  []
 
 
-Underfull \hbox (badness 2698) in paragraph at lines 145--151
+Underfull \hbox (badness 2698) in paragraph at lines 142--148
 \OT1/ptm/m/n/10 zu einan-der sind und somit keine prob-leme darstellen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--151
+Underfull \hbox (badness 10000) in paragraph at lines 142--148
 \OT1/ptm/m/n/10 Ein Ressourcen Vertr[]aglichkeitsgraf ist definiert
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--151
+Underfull \hbox (badness 10000) in paragraph at lines 142--148
 \OT1/ptm/m/n/10 durch $\OML/cmm/m/it/10 G[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 V;
  E\OT1/cmr/m/n/10 )$ \OT1/ptm/m/n/10 in de-nen die Knoten durch
  []
 
 
-Underfull \hbox (badness 3735) in paragraph at lines 145--151
+Underfull \hbox (badness 3735) in paragraph at lines 142--148
 \OT1/ptm/m/n/10 fol-gende vertr[]aglichkeiten f[]ur den kom-pat-i-b-lit[]atsgra
 phen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--151
+Underfull \hbox (badness 10000) in paragraph at lines 142--148
 
  []
 
 
-LaTeX Warning: Citation `?' on page 3 undefined on input line 153.
+LaTeX Warning: Citation `?' on page 3 undefined on input line 150.
 
 
-Underfull \hbox (badness 1997) in paragraph at lines 152--154
+Underfull \hbox (badness 1997) in paragraph at lines 149--151
 []\OT1/ptm/m/n/10 demnach ist eine \OT1/ptm/b/n/10 Schwache vertr[]aglichkeit \
 OT1/ptm/m/n/10 gegeben,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--154
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
  []
 
 
-LaTeX Warning: Citation `?' on page 3 undefined on input line 155.
+LaTeX Warning: Citation `?' on page 3 undefined on input line 152.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
 
-LaTeX Warning: Citation `?' on page 3 undefined on input line 157.
+LaTeX Warning: Citation `?' on page 3 undefined on input line 154.
 
-<fig_comp_mult.png, id=25, 208.3785pt x 184.89075pt>
+<fig_comp_mult.png, id=22, 208.3785pt x 184.89075pt>
 File: fig_comp_mult.png Graphic file (type png)
 <use fig_comp_mult.png>
-Package pdftex.def Info: fig_comp_mult.png  used on input line 161.
+Package pdftex.def Info: fig_comp_mult.png  used on input line 158.
 (pdftex.def)             Requested size: 114.60852pt x 101.6902pt.
-<fig_comp_alu.png, id=26, 543.2295pt x 458.9145pt>
+<fig_comp_alu.png, id=23, 543.2295pt x 458.9145pt>
 File: fig_comp_alu.png Graphic file (type png)
 <use fig_comp_alu.png>
-Package pdftex.def Info: fig_comp_alu.png  used on input line 167.
+Package pdftex.def Info: fig_comp_alu.png  used on input line 164.
 (pdftex.def)             Requested size: 244.451pt x 206.50961pt.
-<fig_cliquen.png, id=27, 3521.155pt x 2489.3pt>
+<fig_cliquen.png, id=24, 3521.155pt x 2489.3pt>
 File: fig_cliquen.png Graphic file (type png)
 <use fig_cliquen.png>
-Package pdftex.def Info: fig_cliquen.png  used on input line 173.
+Package pdftex.def Info: fig_cliquen.png  used on input line 170.
 (pdftex.def)             Requested size: 281.69815pt x 199.14807pt.
 
-Overfull \hbox (29.69815pt too wide) in paragraph at lines 173--174
+Overfull \hbox (29.69815pt too wide) in paragraph at lines 170--171
  [] 
  []
 
@@ -472,7 +464,20 @@ Overfull \hbox (29.69815pt too wide) in paragraph at lines 173--174
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4 <./fig_comp_alu.png> <./fig_cliquen.png>]
+[4 <./fig_comp_alu.png> <./fig_cliquen.png>] (conference_101719.lof
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+ [][] []\OT1/ptm/m/n/10 Ablaufplan und vertr[]aglichkeitsgraphen mit 
+ []
+
+)
+\tf@lof=\write3
+\openout3 = `conference_101719.lof'.
+
+ (conference_101719.lot)
+\tf@lot=\write4
+\openout4 = `conference_101719.lot'.
+
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -492,10 +497,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3848 strings out of 480932
- 56562 string characters out of 2899905
+ 3852 strings out of 480932
+ 56699 string characters out of 2899905
  310573 words of memory out of 3000000
- 19698 multiletter control sequences out of 15000+200000
+ 19699 multiletter control sequences out of 15000+200000
  563415 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,8n,37p,1112b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -511,9 +516,9 @@ sers/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
 C:/Users/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
 fb><C:/Users/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on conference_101719.pdf (7 pages, 1811666 bytes).
+Output written on conference_101719.pdf (6 pages, 1808561 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
+ 67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
