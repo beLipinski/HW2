@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.30)  19 JUN 2021 14:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.30)  20 JUN 2021 20:33
 entering extended mode
 **./conference_101719.tex
 (conference_101719.tex
@@ -464,7 +464,41 @@ Overfull \hbox (29.69815pt too wide) in paragraph at lines 170--171
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4 <./fig_comp_alu.png> <./fig_cliquen.png>] (conference_101719.lof
+[4 <./fig_comp_alu.png> <./fig_cliquen.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 215--218
+ \OT1/ptm/m/it/10 3) Verk-a-belung: [][] \OT1/ptm/m/n/10 Als ein weit-erer,nich
+t zu
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--218
+\OT1/ptm/m/n/10 ver-nachl[]assigbarer bere-ich, gilt vor allem f[]ur das
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 215--218
+\OT1/ptm/m/n/10 so m[]ussen beispiel-sweise leitun-gen die be-trieb-ss-pan-nung
+
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 215--218
+\OT1/ptm/m/n/10 f[]ur die er-mit-tlung des platzbe-darfs, ken-nt-nis []uber die
+
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 215--218
+\OT1/ptm/m/n/10 verk-a-belung hat [3, S.157] Zur berech-nung ergibt sich,
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 219--224
+ \OT1/ptm/m/it/10 4) kon-troll ein-heiten: [][] \OT1/ptm/m/n/10 Da Sig-nale zur
+ steuerung von
+ []
+
+(conference_101719.lof
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
  [][] []\OT1/ptm/m/n/10 Ablaufplan und vertr[]aglichkeitsgraphen mit 
  []
@@ -489,9 +523,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5
-
-] (conference_101719.aux)
+[5] (conference_101719.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -516,7 +548,7 @@ sers/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
 C:/Users/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
 fb><C:/Users/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on conference_101719.pdf (6 pages, 1808561 bytes).
+Output written on conference_101719.pdf (6 pages, 1812677 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
