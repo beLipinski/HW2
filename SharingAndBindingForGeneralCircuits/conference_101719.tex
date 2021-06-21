@@ -208,13 +208,14 @@ Aus diesem Grund wird für das Sharing and Binding for General Circuits ( Vertei
  \subsubsection{Register}
  Da in schaltungen, wie sie in allen modernen systemen vorhanden sind, die über eine einfache input/output addition hinaus gehen Daten und werte über einen einzelnen zyklus hinaus gespeichert werden müssen, kommen in vielen schaltungen speicehrelemente zum einsatz beispielsweise müssen in Reglungs-Schaltungen werte gespeichert werden, die über mehrere zyklen zur verfügung stehen. \\
  Grundlegend verhält sich die bindung und das Teilen von registern ganz ähnlich zu den vorgängen bei normalen operatoren. Auch sind die vorgaben, beid denen REgister geteilt werden können gleich zu denen der Operatoren, das bedeutet Register können getielt werden, wenn sie nicht in konkurenz zu einander stehen, das beduetet wenn sie exklusiv zu einander stehen oder erst nach  einander auftreten. Nicht analog allerdings ist hier die definition der Lebenszeit einer variable und dementsprechend auch der register nutzung ist. Die lebenzeit ergibt sich nach De Micheli aus dem geburtszeitpunkt (\textit{former})  und dem Todeszeitpunkt (\textit{latter} einer variable. Der Geburtszeitpunkt ist der Zeitpunkt der erstellung durch das ergebnis einer Operation und der todeszeitpunkt ist als der späteste zeitpunkt anzunehmen in dem die Variable als input referenziert wird\cite[S. 240]{3}
+Zur lösung der Registerbindung kann der Left-Edge Algorithmus verwendet werden \cite[S. 359]{2}\\
  \subsubsection{Steuerlogik}
  Unter der Berücksichtigung der steuerlogik kann sowohl für multiplexer, die ganz ähnlich zu den aufgezeigten vorgängen betrachtet werden kann, desweiteren auch Bussysteme bewertet werde nn hierzu wird das augenmerk auf zwei zu berücksichtigende komponenten gelegt. Als erstes wird der bus an sich selbst betrachtet, der einen fixwert zugeordet bekommt, einen sogenannten overhead.
- als Zweite komponente werden die Bustreiber aufgefürt, also die funktionseinheiten, die zur steuerung des busses fungieren. diese kann als verteilter multiplexer betrachtet werden, was eine berechnung von anzahl und verbraucht möglich macht.\cite[S. 157]{3}
+ als Zweite komponente werden die Bustreiber aufgefürt, also die funktionseinheiten, die zur steuerung des busses fungieren. diese kann als verteilter multiplexer betrachtet werden, was eine berechnung von anzahl und verbraucht möglich macht.\cite[S. 157]{3}\\
  \subsubsection{Verkabelung}
  Als ein weiterer,nicht zu vernachlässigbarer bereich, gilt vor allem für das platzmanagement die benötigte Verdrahtung zur verbindung der plazierten bauteile. Hierbei ist zu beachten, das nun auch starke physikalische beeinflussung mit in die plazierung der komponenten mit einbezogen werden muss und sich somit wiederum auch auf die benötigte fläche ausbreitet, so müssen beispielsweise leitungen die betriebsspannung führen möglichst von empfindlichen busleitung räumlich fern gehalten werden.
 Somit ist eine umumgehbarer vorrausetzung für die ermittlung des platzbedarfs, kenntnis über die strucktur der elemente , dazu zählen ihre größe, ihre anzah und ihre plazierung zudem ist auch die bindung der elemnete von bedeutung ,da diese einen direkten einfluss auf ihre verkabelung hat \cite[S.157]{3}
-Zur berechnung ergibt sich, dass die länge der verdrautung proportional zur anzahl der einhgesetzen funktionsblöcke, hoch $\alpha$ ist, wobei $0 \leq \alpha \geq 1$ ist.\cite[S.157]{3}
+Zur berechnung ergibt sich, dass die länge der verdrautung proportional zur anzahl der einhgesetzen funktionsblöcke, hoch $\alpha$ ist, wobei $0 \leq \alpha \geq 1$ ist.\cite[S.157]{3}\\
  \subsubsection{kontroll einheiten}
  Da Signale zur steuerung von bausteinen unerlässlich sind und diese signake letzendlich den gleichen beschränkungen und einflüssen unterliegen wie datensignale kann es passieren, das diese steuersignale auf einem Kritischen pfad liegen und somit zu einem problem für den Programm ablauf werden.\\
  Eine möglichkeit der Optimierung, ist die reduzierung des ROM ( \textbf{R}ead \textbf{O}nly \textbf{M}emory)
@@ -223,6 +224,21 @@ dies ist möglich, wenn es sich um eine implementierung eines Microcode basierte
 Hart verdratete codierungen hingegen lassen sich nur durch ihre verschiedene bauweise optimieren und anpassen, wohingegen der gedanke der anpassung bedeutet, eine gewisse störsicherheit einzubiunden so werden in kritischen umgebungen, in denen es nicht zu sörsignalen kommen darf die einen bit kippen lassen würden gray code impule verwendet um in den nächsten zeitschritt zu springen.\cite[S.373]{2}
 \section{Sharing and Binding for General Circuits}
 \subsection{Unconstrained minimum - Area Binding}
+%kann gelöst werden bei standart linearen solvern als nicht lineares sytsem mit linearen bedingungen 
+%allerdings ist es nur fr kleine circuits wirklich effektiv
+%modeliert mittels eines kompatiblitäts graphs mit gewichteten kanten
+%das gesamte system kann in vile kleine untersysteme aufgeteilt werden so z.b als graph für adder und als graphen für multiplxer oder die steering logic
+%ganz ähnlich also einer gewichteten clique, wobei die anzahl der cliquen die cliquen überdeckungszahl übersteigen kann da nicht maximale cliquen ausgewählt werden können
+%2 problemme entstehen
+%1. das gewichtete cliquen partionierungs problem hierfür werden heuristische algorithmen genutzt
+Eine mögliche vorgehensweise ist, die kosten für z.b Multiplexer gleichmäßig über die operatoren zu verteilen\cite[S.247]{3} 
+
+
+Desweiteren kann ein Algorithmus nach Tseng und Siewiorek genutzt werden in dem Cliquen partioniert, also zusammengefasst werden. Das Ziel des Alorithmus ist es ungewichtete untergraphen zu erstellen, um im anschluss eine Optimierung erhalten zu können\cite[S. 247]{3}.
+Erreicht wird dies durch das erkennen und auswählen des knotenpares mit den meisten Gemeinsamen Knoten die mittels einer Kante Verbunden sind, gesucht wird also das Paar mit den meisten gemeinsamen Nachbarn. Sobald das paar mit den meisten nachbarn gefunden wurde, werden diese zusammengeführt, nach der zusammenführung werden nun alle Kanten gelöscht, die nicht in Verbindung mit beiden zusammengeführten knoten stehen. Übrig bleiben demnach nur noch ein verbundenen knoten und alle kanten, die mit beiden knoten in verbindung standen. Dies kann solange durchgeführt werden, wie sich Partner für eine zusammen führung finden lassen, andernfals ist die erstellte clique maximal und kann abgespeichert , gegebenenfalls gefärbt und anschliessend geupdatet werden.Eine Aktualisierung des Graphen lässt sich mittels des Updating algorithmus nach Tseng und Siewiorek\cite[S.393]{5}durchführen, indem die Kanten, die zusammengeführt wuren, aus der liste der kanten entfernt werden und in eine liste der gelöschten kanten eingetragen wird, anschlieschend werden in einem zweiten schritt wird die anzahl der nächsten nachbarn und die anzahl der kanten die gelöscht werden müssen neu. \\
+ Abgeschlossen ist die cliquenpartionierung in dem moment, in dem sich keine kanten mehr in der kanten liste befinden\cite[S.248]{3}\cite[S.392-393]{5}.
+
+
 \subsection{Performance Constrained Binding}
 \subsection{Performance Directed Binding}
 \section{Gleichnis,vorgestellter Algorithmen}
@@ -233,6 +249,7 @@ Hart verdratete codierungen hingegen lassen sich nur durch ihre verschiedene bau
 \bibitem{2} Dr.Walter Lange, Prof.Dr.Martin Bogdan, Entwurf und Syntese von Eingebetteten Systhemen, Ein Lehrbuch,Oldenbourg Verlag München, 2013
 \bibitem{3} DEMICH
 \bibitem{4} Martin Pieper, Mathematische Optimierung, Eine Einführung in die Kontinuierliche Optimierung mit Beispielen,Springer Spektrum,2017
+\bibitem{5} Chia-Jeng Tseng, Daniel P. Siewiorek, Automated Synthesis of Data Paths in Digital Systems,IEEE Xplore, 1986
 \end{thebibliography}
 \listoffigures
 \listoftables
