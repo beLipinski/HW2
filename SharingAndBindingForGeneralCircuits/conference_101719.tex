@@ -231,25 +231,34 @@ Hart verdratete codierungen hingegen lassen sich nur durch ihre verschiedene bau
 %ganz ähnlich also einer gewichteten clique, wobei die anzahl der cliquen die cliquen überdeckungszahl übersteigen kann da nicht maximale cliquen ausgewählt werden können
 %2 problemme entstehen
 %1. das gewichtete cliquen partionierungs problem hierfür werden heuristische algorithmen genutzt
-Eine mögliche vorgehensweise ist, die kosten für z.b Multiplexer gleichmäßig über die operatoren zu verteilen\cite[S.247]{3} 
-
+Zur berechnung und Einschätzung der kosten, und somit der möglichkeit diese zu minimieren muss wie bereits in vden vorherigen kapiteln, festegestellt eine Möglichkeit geschaffen werden mehr als eine operation einer hardware komponente zuornden zu können. Hinzu gekommen ist nun auch die betrachtung der Steuerlogik, der Datenübertragung und der Verkablelung die ebenfalls einen nich unerheblichen einfluss auf die effizienz einer schaltung nehmen.Ganz Äquivalent wird nun auch unter berücksichtigung dieser versucht heraus zu finden, ob und in welchem rahmen diese verteilt werden können. Durch den umstand, das die vorgehenswise ähnlich zu der ist , die von der einfachen betrachtung ohne die steuerlogik bekannt ist, ergeben sich auch ganz ähnliche probleme bei der arbeit mit dieser.\\
+Problematisch ist nun auch, dass auch in diesem fall mit steigender komplexität der Verschaltung das bestimmen eines Optimums zunehmend schwieriger wird. Deswegen wird versucht mittels bestimmter algorithmen, den Perfekten graphen zu finden. 
+Da ein perfekter Graph, die annahme zulässt, das er in Polynomialzeit zeit berechenbar ist,kann angenommen werden das, das ein ergebnis in einer akzeptablen zeit zu erwarten ist. Für den fall, das sich der Perfekte graph in Polynomialzeit brechnen lässt, gilt auch, das sich all seine Parameter ebenfalls in akzeptabler zeit berechnen lassen\cite[S. 60]{6}.\\
+Eine mögliche vorgehensweise ist, die kosten für z.b Multiplexer gleichmäßig über die operatoren zu verteilen\cite[S.247]{3}
+Ermöglicht wird dies über eine gänzliche betrachtung der cliquen, denen ein set an kosten zugeordnet wird, das sich aus den kosten mengen ihrer knoten ergibt. Ihre gewichtung erhaält die clique durch die anzahl ihrer hinzu gefügten knoten. Die gesamtkosten wiederum ergeben sich aus der Summe der Cliquen, die zu einer partition zusammengefügt werden.\cite[S. 247]{3}\\
+So kann eine formel für Multiplexer wie folgt aussehen:\\
+\begin{center}
+$area_{mux} = area_{mux}^{\Delta}(a-1)  $ \\und wird als:\\ $area_{M}^{0} + \sum_{i=1}^{a}area_{M}^{i}$\\ geschrieben\\  \cite[S. 247]{3}
+\end{center}
 
 Desweiteren kann ein Algorithmus nach Tseng und Siewiorek genutzt werden in dem Cliquen partioniert, also zusammengefasst werden. Das Ziel des Alorithmus ist es ungewichtete untergraphen zu erstellen, um im anschluss eine Optimierung erhalten zu können\cite[S. 247]{3}.
-Erreicht wird dies durch das erkennen und auswählen des knotenpares mit den meisten Gemeinsamen Knoten die mittels einer Kante Verbunden sind, gesucht wird also das Paar mit den meisten gemeinsamen Nachbarn. Sobald das paar mit den meisten nachbarn gefunden wurde, werden diese zusammengeführt, nach der zusammenführung werden nun alle Kanten gelöscht, die nicht in Verbindung mit beiden zusammengeführten knoten stehen. Übrig bleiben demnach nur noch ein verbundenen knoten und alle kanten, die mit beiden knoten in verbindung standen. Dies kann solange durchgeführt werden, wie sich Partner für eine zusammen führung finden lassen, andernfals ist die erstellte clique maximal und kann abgespeichert , gegebenenfalls gefärbt und anschliessend geupdatet werden.Eine Aktualisierung des Graphen lässt sich mittels des Updating algorithmus nach Tseng und Siewiorek\cite[S.393]{5}durchführen, indem die Kanten, die zusammengeführt wuren, aus der liste der kanten entfernt werden und in eine liste der gelöschten kanten eingetragen wird, anschlieschend werden in einem zweiten schritt wird die anzahl der nächsten nachbarn und die anzahl der kanten die gelöscht werden müssen neu. \\
- Abgeschlossen ist die cliquenpartionierung in dem moment, in dem sich keine kanten mehr in der kanten liste befinden\cite[S.248]{3}\cite[S.392-393]{5}.
+Erreicht wird dies durch das erkennen und auswählen des knotenpares mit den meisten Gemeinsamen Knoten die mittels einer Kante Verbunden sind, gesucht wird also das Paar mit den meisten gemeinsamen Nachbarn. Sobald das paar mit den meisten nachbarn gefunden wurde, werden diese zusammengeführt, nach der zusammenführung werden nun alle Kanten gelöscht, die nicht in Verbindung mit beiden zusammengeführten knoten stehen. Übrig bleiben demnach nur noch ein verbundenen knoten und alle kanten, die mit beiden knoten in verbindung standen. Dies kann solange durchgeführt werden, wie sich Partner für eine zusammen führung finden lassen, andernfals ist die erstellte clique maximal und kann abgespeichert , gegebenenfalls gefärbt und anschliessend geupdatet werden.Eine Aktualisierung des Graphen lässt sich mittels des Updating algorithmus nach Tseng und Siewiorek\cite[S.393]{5}durchführen, indem die Kanten, die zusammengeführt wuren, aus der liste der kanten entfernt werden und in eine liste der gelöschten kanten eingetragen wird, anschlieschend werden in einem zweiten schritt wird die anzahl der nächsten nachbarn und die anzahl der kanten die gelöscht werden müssen neu. 
+ Abgeschlossen ist die cliquenpartionierung in dem moment, in dem sich keine kanten mehr in der kanten liste befinden\cite[S.248]{3}\cite[S.392-393]{5}.\\
+Ein Graph ist in dem Moment Perfekt, wenn auch alle seine Untergraphen $H(G)$ folgende bedingung erfüllen. Ein Untergraph ist perfekt, wenn die Mächtigkeit seiner größten Clique gleich ist mit der Chromatischen zahl. $\omega(H) = \chi(H)$ Desweiteren muss die unabhängigkeitszahl $ \alpha(H)$, die angibt, welche Knoten nciht miteinandern durch ein kante verbunden sind, also in einem nicht adjazenten verhältnis stehen, ebenfalls gleich mit der anzahl an unabhängigen mengen, also der Zusammenhangszahl $(\kappa(H)$ gleich sein $\alpha(H) = \kappa(H)$\cite[S.507]{1}\cite[S.59 - 60 ]{6} Das bedeutet Konkret am besipeil der Voran gegangenen Algorithmen, dass versucht wird, einen graphen zu Optimieren, in dem der graph in Untergraphen zerlegt wird und für diese geprüft wird, ob ein Optimum vorliegt.
+ \subsection{Performance Constrained Binding und Performance Directed Binding}
+Neben der Optimierung der Kosten, durch reduktion der Eingesetzten Hardware, war es zwingend notwendig einen weiteren aspekt zu beobachten, da dieser direkt durch die mehrfachnutzung der hardwarekomponenten beeinflusst wird.
+Da die reduzierung der benutzen hardware, auch immer einen direkten einfluss auf die zeit hat, die zur ausführung der aufgaben benötigt wird hat, beeinflusst auch die verbaute steuerelektronik, die verkabelung und die Daten haltung unmittelbar die ausführungszeit. Gerade Multiplexer wirken sich negativ auf die benötigte ausführungszeit aus, da eine direkte serielle 1 zu 1 verkabelung, immer schneller ist, als eine Gemulitplexte, in denen die übertragung zu gunsten von chipfläche und weniger verkabelung reduzuiert wird.\\
 
-
-\subsection{Performance Constrained Binding}
-\subsection{Performance Directed Binding}
 \section{Gleichnis,vorgestellter Algorithmen}
 \section{Ausblick}
 
 \begin{thebibliography}{00}
 \bibitem{1} Jürgen Teich, Christian Haubelt, Digitale Hardware/Software-Systeme, Synthese und Optimierung, 2. Auflage,Springer,2007
 \bibitem{2} Dr.Walter Lange, Prof.Dr.Martin Bogdan, Entwurf und Syntese von Eingebetteten Systhemen, Ein Lehrbuch,Oldenbourg Verlag München, 2013
-\bibitem{3} DEMICH
+\bibitem{3} Giovanni De Micheli, Synthesis and Optimization of Digital Circuits,McGraw-Hill, Inc. New York etc,1994
 \bibitem{4} Martin Pieper, Mathematische Optimierung, Eine Einführung in die Kontinuierliche Optimierung mit Beispielen,Springer Spektrum,2017
 \bibitem{5} Chia-Jeng Tseng, Daniel P. Siewiorek, Automated Synthesis of Data Paths in Digital Systems,IEEE Xplore, 1986
+\bibitem{6} Graphentheoretische Konzepte und Algorithmen, Sven Oliver Krumke \& Hartmut Noltemeier, 3. Auflage,Springer Vieweg, 2012
 \end{thebibliography}
 \listoffigures
 \listoftables
