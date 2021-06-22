@@ -7,6 +7,8 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -248,10 +250,25 @@ Ein Graph ist in dem Moment Perfekt, wenn auch alle seine Untergraphen $H(G)$ fo
  \subsection{Performance Constrained Binding und Performance Directed Binding}
 Neben der Optimierung der Kosten, durch reduktion der Eingesetzten Hardware, war es zwingend notwendig einen weiteren aspekt zu beobachten, da dieser direkt durch die mehrfachnutzung der hardwarekomponenten beeinflusst wird.
 Da die reduzierung der benutzen hardware, auch immer einen direkten einfluss auf die zeit hat, die zur ausführung der aufgaben benötigt wird hat, beeinflusst auch die verbaute steuerelektronik, die verkabelung und die Daten haltung unmittelbar die ausführungszeit. Gerade Multiplexer wirken sich negativ auf die benötigte ausführungszeit aus, da eine direkte serielle 1 zu 1 verkabelung, immer schneller ist, als eine Gemulitplexte, in denen die übertragung zu gunsten von chipfläche und weniger verkabelung reduzuiert wird.\\
+Desweiteren stellt sich somit die Fragen,  ob die erstezung von direkt verkabelungen durch MUltiplexer, eine zeitliche beeinträchtigung entsteht, die, das einhalten der zylkuszeit verletzt.
+Betrachtet wird ein Pfad, in einem Ablaufplan mit einer maximalen menge von knoten,in diesem können Operationen unter der vorrausetzung, das sie Die zykluszeit $\Phi$ nicht verletzen in den selben Taktzyklus gelegt werden, hierbei spricht man von der Verkettung (\textit(chaining)) von Operationen\cite[S.249]{3}. unter dieser zu-hilfenahme ist es möglich auch multipexer, verkabelungen zu verketten und diese in einen normalen ablaufplan  und Bindung $B$ einzubauen. 
+eine Formel, die die Pfad verzögerung angibt ist:\\
+\begin{center}
+\begin{equation}
+\sum_{i\in path} \widehat{d_i} + multiplexer\_delay(B) + wireing\_delay(B)
+\end{equation}
+\end{center}
+wobei, $\widehat{d_i} $die einzel delays der resourcen darstellen und $B = Binding$ angibt.\\
+Das resource sharing unter zeitlichen aspketen wird mit der formel 
+\begin{center}
+\begin{equation}
+\sum_{i\in path}d_i + multiplexer\_delay(B) + wireing\_delay(B) < Phi  \forall path
+\end{equation}
+\end{center}
+ beschrieben \cite[S.249]{3}
 
 \section{Gleichnis,vorgestellter Algorithmen}
 \section{Ausblick}
-
 \begin{thebibliography}{00}
 \bibitem{1} Jürgen Teich, Christian Haubelt, Digitale Hardware/Software-Systeme, Synthese und Optimierung, 2. Auflage,Springer,2007
 \bibitem{2} Dr.Walter Lange, Prof.Dr.Martin Bogdan, Entwurf und Syntese von Eingebetteten Systhemen, Ein Lehrbuch,Oldenbourg Verlag München, 2013
