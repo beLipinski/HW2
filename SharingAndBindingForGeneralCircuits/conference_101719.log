@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.28)  22 JUN 2021 22:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.28)  22 JUN 2021 23:00
 entering extended mode
 **./conference_101719.tex
 (conference_101719.tex
@@ -352,34 +352,57 @@ Underfull \hbox (badness 2261) in paragraph at lines 39--41
 []\T1/ptm/m/n/10 Realisierbar wer-den elek-trische Ver-schal-tun-gen in der
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 44.
 
 (C:\Users\bened\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
 
 
 (C:\Users\bened\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
-LaTeX Warning: Citation `?' on page 1 undefined on input line 69.
+ []
 
 
-Underfull \hbox (badness 3260) in paragraph at lines 65--70
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 \\S
+        imple Schaltungen lassen sich durch das gezielte Aneinanderreihen vo...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Citation `?' on page 1 undefined on input line 73.
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 69--74
 \T1/ptm/m/n/10 Optimierung ver-wen-det wer-den. Die Pareto-Optimierung
  []
 
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 81--84
+Underfull \hbox (badness 10000) in paragraph at lines 85--88
 \T1/ptm/m/n/10 Damit würde, wenn vom Re-sour-centyp Mulit-plizier:
  []
 
 
-Underfull \hbox (badness 3417) in paragraph at lines 81--84
+Underfull \hbox (badness 3417) in paragraph at lines 85--88
 \OML/cmm/m/it/10 r[]$\T1/ptm/m/n/10 ,Beispielweise 1 Ein-heiten zur ver-fü-gung
  ste-hen die
  []
@@ -387,15 +410,15 @@ Underfull \hbox (badness 3417) in paragraph at lines 81--84
 <fig_bsp_binding.png, id=16, 362.5545pt x 287.8755pt>
 File: fig_bsp_binding.png Graphic file (type png)
 <use fig_bsp_binding.png>
-Package pdftex.def Info: fig_bsp_binding.png  used on input line 88.
+Package pdftex.def Info: fig_bsp_binding.png  used on input line 92.
 (pdftex.def)             Requested size: 199.4056pt x 158.332pt.
 
-Underfull \hbox (badness 1490) in paragraph at lines 85--92
+Underfull \hbox (badness 1490) in paragraph at lines 89--96
 []\T1/ptm/m/n/10 Im un-ter-schied zur Al-lok-ierung wird in der Bindung
  []
 
 
-Underfull \hbox (badness 2134) in paragraph at lines 85--92
+Underfull \hbox (badness 2134) in paragraph at lines 89--96
 \T1/ptm/m/n/10 schlieÿlich fest-gelegt welche Re-source welche op-er-a-tion
  []
 
@@ -403,87 +426,104 @@ Underfull \hbox (badness 2134) in paragraph at lines 85--92
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
- [2 <./fig_bsp_binding.png>]
-Underfull \hbox (badness 2837) in paragraph at lines 144--150
+ []
+
+
+Underfull \hbox (badness 3049) in paragraph at lines 115--116
+\T1/ptm/m/n/10 zeit-zlot mehr als 3 ALU ein-heiten ge-braucht wer-den,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
+
+ []
+
+[2 <./fig_bsp_binding.png>]
+Underfull \hbox (badness 2837) in paragraph at lines 154--160
 \T1/ptm/m/n/10 beziehungsweise Al-lok-ierung erzeu-gen zu kön-nen muss
  []
 
 
-Underfull \hbox (badness 3209) in paragraph at lines 144--150
+Underfull \hbox (badness 3209) in paragraph at lines 154--160
 \T1/ptm/m/n/10 Kom-pat-i-b-litäts-graph oder Verträglichkeits-graph en-twick-el
 t
  []
 
 
-Underfull \hbox (badness 2698) in paragraph at lines 144--150
+Underfull \hbox (badness 2698) in paragraph at lines 154--160
 \T1/ptm/m/n/10 zu einan-der sind und somit keine prob-leme darstellen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--150
+Underfull \hbox (badness 10000) in paragraph at lines 154--160
 \T1/ptm/m/n/10 Ein Ressourcen Verträglichkeits-graf ist definiert
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--150
+Underfull \hbox (badness 10000) in paragraph at lines 154--160
 \T1/ptm/m/n/10 durch $\OML/cmm/m/it/10 G[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 V; 
 E\OT1/cmr/m/n/10 )$ \T1/ptm/m/n/10 in de-nen die Knoten durch
  []
 
 
-Underfull \hbox (badness 3735) in paragraph at lines 144--150
+Underfull \hbox (badness 3735) in paragraph at lines 154--160
 \T1/ptm/m/n/10 fol-gende verträglichkeiten für den kom-pat-i-b-litäts-graphen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--150
+Underfull \hbox (badness 10000) in paragraph at lines 154--160
 
  []
 
 
-LaTeX Warning: Citation `?' on page 3 undefined on input line 152.
+LaTeX Warning: Citation `?' on page 3 undefined on input line 162.
 
 
-Underfull \hbox (badness 1997) in paragraph at lines 151--153
+Underfull \hbox (badness 1997) in paragraph at lines 161--163
 []\T1/ptm/m/n/10 demnach ist eine \T1/ptm/b/n/10 Schwache verträglichkeit \T1/p
 tm/m/n/10 gegeben,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--153
+Underfull \hbox (badness 10000) in paragraph at lines 161--163
 
  []
 
 
-LaTeX Warning: Citation `?' on page 3 undefined on input line 154.
+LaTeX Warning: Citation `?' on page 3 undefined on input line 164.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
 
-LaTeX Warning: Citation `?' on page 3 undefined on input line 156.
+LaTeX Warning: Citation `?' on page 3 undefined on input line 166.
 
 <fig_comp_mult.png, id=22, 208.3785pt x 184.89075pt>
 File: fig_comp_mult.png Graphic file (type png)
 <use fig_comp_mult.png>
-Package pdftex.def Info: fig_comp_mult.png  used on input line 160.
+Package pdftex.def Info: fig_comp_mult.png  used on input line 170.
 (pdftex.def)             Requested size: 114.60852pt x 101.6902pt.
 <fig_comp_alu.png, id=23, 543.2295pt x 458.9145pt>
 File: fig_comp_alu.png Graphic file (type png)
 <use fig_comp_alu.png>
-Package pdftex.def Info: fig_comp_alu.png  used on input line 166.
+Package pdftex.def Info: fig_comp_alu.png  used on input line 176.
 (pdftex.def)             Requested size: 244.451pt x 206.50961pt.
 <fig_cliquen.png, id=24, 3521.155pt x 2489.3pt>
 File: fig_cliquen.png Graphic file (type png)
 <use fig_cliquen.png>
-Package pdftex.def Info: fig_cliquen.png  used on input line 172.
+Package pdftex.def Info: fig_cliquen.png  used on input line 182.
 (pdftex.def)             Requested size: 281.69815pt x 199.14807pt.
 
-Overfull \hbox (29.69815pt too wide) in paragraph at lines 172--173
+Overfull \hbox (29.69815pt too wide) in paragraph at lines 182--183
  [] 
  []
 
@@ -492,123 +532,123 @@ Overfull \hbox (29.69815pt too wide) in paragraph at lines 172--173
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 2717) in paragraph at lines 211--214
+Underfull \hbox (badness 2717) in paragraph at lines 221--224
 \T1/ptm/m/n/10 schal-tun-gen spe-icehrele-mente zum ein-satz beispiel-sweise
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 211--214
+Underfull \hbox (badness 2035) in paragraph at lines 221--224
 \T1/ptm/m/n/10 reg-is-tern ganz ähn-lich zu den vorgän-gen bei nor-malen
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 211--214
+Underfull \hbox (badness 1448) in paragraph at lines 221--224
 \T1/ptm/m/n/10 geteilt wer-den kön-nen gle-ich zu de-nen der Op-er-a-toren,
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 211--214
+Underfull \hbox (badness 1888) in paragraph at lines 221--224
 \T1/ptm/m/n/10 das be-deutet Reg-is-ter kön-nen getielt wer-den, wenn sie
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--214
+Underfull \hbox (badness 10000) in paragraph at lines 221--224
 
  []
 
 [4 <./fig_comp_alu.png> <./fig_cliquen.png>]
-Underfull \hbox (badness 1910) in paragraph at lines 215--217
+Underfull \hbox (badness 1910) in paragraph at lines 225--227
 \T1/ptm/m/n/10 kann sowohl für mul-ti-plexer, die ganz ähn-lich zu den
  []
 
 
-Underfull \hbox (badness 3884) in paragraph at lines 215--217
+Underfull \hbox (badness 3884) in paragraph at lines 225--227
 \T1/ptm/m/n/10 auch Bussys-teme be-w-ertet werde nn hi-erzu wird das
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 215--217
+Underfull \hbox (badness 2478) in paragraph at lines 225--227
 \T1/ptm/m/n/10 au-gen-merk auf zwei zu berück-sichti-gende kom-po-nen-ten
  []
 
 
-Underfull \hbox (badness 1603) in paragraph at lines 215--217
+Underfull \hbox (badness 1603) in paragraph at lines 225--227
 \T1/ptm/m/n/10 aufge-fürt, also die funk-tion-sein-heiten, die zur steuerung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--221
+Underfull \hbox (badness 10000) in paragraph at lines 228--231
 \T1/ptm/m/n/10 leitun-gen die be-trieb-ss-pan-nung führen möglichst von
  []
 
 
-Underfull \hbox (badness 1460) in paragraph at lines 218--221
+Underfull \hbox (badness 1460) in paragraph at lines 228--231
 \T1/ptm/m/n/10 empfind-lichen busleitung räum-lich fern gehal-ten wer-den.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--221
+Underfull \hbox (badness 10000) in paragraph at lines 228--231
 
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 222--227
+Underfull \hbox (badness 2626) in paragraph at lines 232--237
  \T1/ptm/m/it/10 4) kon-troll ein-heiten: [][] \T1/ptm/m/n/10 Da Sig-nale zur s
 teuerung von
  []
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 236--242
+Underfull \hbox (badness 3138) in paragraph at lines 246--252
 \T1/ptm/m/n/10 steigen-der kom-plex-ität der Ver-schal-tung das bes-tim-men
  []
 
 
-Underfull \hbox (badness 6094) in paragraph at lines 236--242
+Underfull \hbox (badness 6094) in paragraph at lines 246--252
 \T1/ptm/m/n/10 angenom-men wer-den das, das ein ergeb-nis in einer
  []
 
 
-Underfull \hbox (badness 3601) in paragraph at lines 236--242
+Underfull \hbox (badness 3601) in paragraph at lines 246--252
 \T1/ptm/m/n/10 Eine mögliche vorge-hensweise ist, die kosten für z.b
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--242
+Underfull \hbox (badness 10000) in paragraph at lines 246--252
 
  []
 
 [5]
-Underfull \hbox (badness 3872) in paragraph at lines 246--250
+Underfull \hbox (badness 3872) in paragraph at lines 264--268
 []\T1/ptm/m/n/10 Desweiteren kann ein Al-go-rith-mus nach Tseng und
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 251--256
+Underfull \hbox (badness 1354) in paragraph at lines 269--274
 \T1/ptm/m/n/10 steuerelek-tronik, die verk-a-belung und die Daten hal-tung
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 251--256
+Underfull \hbox (badness 1442) in paragraph at lines 269--274
 \T1/ptm/m/n/10 ver-letzt. Be-tra-chtet wird ein Pfad, in einem Ablauf-plan
  []
 
 
-Underfull \hbox (badness 3780) in paragraph at lines 251--256
+Underfull \hbox (badness 3780) in paragraph at lines 269--274
 \T1/ptm/m/n/10 Op-er-a-tio-nen [3, S.249]. unter dieser zu-hilfenahme ist
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--256
+Underfull \hbox (badness 10000) in paragraph at lines 269--274
 
  []
 
 
-Overfull \hbox (30.3046pt too wide) detected at line 266
+Overfull \hbox (30.3046pt too wide) detected at line 284
 [] \OML/cmm/m/it/10 d[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 multiplexer[]delay\O
 T1/cmr/m/n/10 (\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 wireing[]
 delay\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 < Ph
@@ -616,12 +656,12 @@ i\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 path
  []
 
 
-Underfull \hbox (badness 7256) in paragraph at lines 276--277
+Underfull \hbox (badness 7256) in paragraph at lines 293--294
 []\T1/ptm/m/n/8 Giovanni De Micheli, Syn-the-sis and Op-ti-miza-tion of Dig-i-t
 al
  []
 
-(conference_101719.lof
+(conference_101719.lof [6]
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
  [][] []\T1/ptm/m/n/10 Ablaufplan und verträglichkeits-graphen mit 
  []
@@ -646,7 +686,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6] [7
+[7
 
 ] (conference_101719.aux)
 
@@ -656,7 +696,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  4718 strings out of 479321
  69993 string characters out of 2856583
- 375564 words of memory out of 3000000
+ 376673 words of memory out of 3000000
  22109 multiletter control sequences out of 15000+600000
  505239 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -674,7 +714,7 @@ Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/bened/
 AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/bened/
 AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/bened/
 AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (8 pages, 1841125 bytes).
+Output written on conference_101719.pdf (8 pages, 1840938 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

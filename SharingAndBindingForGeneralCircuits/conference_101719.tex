@@ -40,6 +40,7 @@ Realisierbar werden elektrische Verschaltungen in der Digitaltechnik erst durch 
 Hierbei übernehmen verschiedene Bausteine verschiedene Aufgaben, die mal weniger und mal mehr komplizierte Operationen beinhalten. 
 \subsubsection{AND-Gatter}
 Eine der Grundoperationen, die in fast jeder Schaltung zu finden ist, ist die AND-Operation, zu deutsch die UND-Operation. Hierbei wird der Eingang erst auf logisch 1 geschaltet, wenn alle Eingänge dies ebenfalls sind.\\
+\begin{center}
 \begin{tabular}[h]{ccc}
 x&y&Out\\
 0&0&0\\
@@ -47,8 +48,10 @@ x&y&Out\\
 1&0&0\\
 1&1&1\\
 \end{tabular}
+\end{center}
 \subsubsection{OR-Gatter}
 Das Ergebnis des OR-Gatters ist in dem Fall wahr, wenn einer seiner Eingänge wahr ist.\\
+\begin{center}
 \begin{tabular}[h]{ccc}
 x&y&Out\\
 0&0&0\\
@@ -56,7 +59,8 @@ x&y&Out\\
 1&0&1\\
 1&1&1\\
 \end{tabular}
-\\Simple Schaltungen lassen sich durch das gezielte Aneinanderreihen von AND- und OR-Gattern gut realisieren, sollte aber 
+\end{center}
+Simple Schaltungen lassen sich durch das gezielte Aneinanderreihen von AND- und OR-Gattern gut realisieren, sollte aber 
 \subsubsection{Multiplexer}
 Multiplexer werden genutzt, wenn eine parallele Verarbeitung aus unterschiedlichsten Gründen nicht möglich ist. Das kann zum einen eine nicht ausreichende Verfügbarkeit an Kanälen sein, aber auch die bewusste Entscheidung, weniger Kanäle aus Kostengründen zu benutzen, sein. Dieser Schritt kann gewählt werden, wenn Verläufe zwar parallel laufen, aber nur exklusiv ausgeführt werden. Das bedeutet, dass nach einer elementaren Entscheidung nur einer der beiden Stränge ausgeführt werden kann. Beeindruckend allerdings ist, dass Multiplexer trotz ihrer fortgeschrittenen Eigenschaften gegenüber der Grundbausteine doch recht simpel aus genau diesem erzeugt werden können. So ergibt sich für einen einfachen Multiplexer das Schaltbild aus zwei AND-Gattern, einem NOT-Gatter und einem OR- Gatter. .....
 \subsubsection{FPGA}
@@ -92,6 +96,7 @@ Die Bindung bietet ein Tool, das veranschaulicht wie optimal die vorhandene scha
 
 Dem Bild ist zu entnehmen das in diesem beispiel für die zuordnung jeder Aufgabe zu einer Resource:11 Bauteile benötigt werden.
  Die sich aus 3 Multiplikationen = $r_1$ und aus 8 operationen für eine Arithmetisch logisch einheit $r_2$ ergibt.\\
+ \begin{center}
 \begin{tabular}[h]{ccc}
 $v_i$&$\beta(v_i)$&$\gamma(v_i)$\\
 $v_1$&$r_2$&1\\
@@ -106,7 +111,9 @@ $v_9$&$r_2$&7\\
 $v_10$&$r_2$&8\\
 $v_11$&$r_1$&3\\
 \end{tabular}
-Da es sich, um ein recht einfach zu überblickendes beispiel handelt, lässt sich durch einen geübten blick bereits erkennen wie eine Optimierung aussehen könnte. Im ersten Zeitslot ist abzulesen, das 3 Arithmetische operationen und eine Multiplikation durchgeführt werden, somit werden 3 ALU Einheiten und ein Multiplizierer benötigt.Im weiteren verlauf lässt sich unteranderem erkennen das in keinem weiteren zeitzlot mehr als 3 ALU einheiten gebraucht werden, deswegen ist dies auch unsere minimal benötigte anzahl an Resourcen dieses typs. Ganz genau deutlich wird dies durch eine veranschaulichung in einer tabelle.
+\end{center}
+Da es sich, um ein recht einfach zu überblickendes beispiel handelt, lässt sich durch einen geübten blick bereits erkennen wie eine Optimierung aussehen könnte. Im ersten Zeitslot ist abzulesen, das 3 Arithmetische operationen und eine Multiplikation durchgeführt werden, somit werden 3 ALU Einheiten und ein Multiplizierer benötigt.Im weiteren verlauf lässt sich unteranderem erkennen das in keinem weiteren zeitzlot mehr als 3 ALU einheiten gebraucht werden, deswegen ist dies auch unsere minimal benötigte anzahl an Resourcen dieses typs. Ganz genau deutlich wird dies durch eine veranschaulichung in einer tabelle.\\
+\begin{center}
 \begin{tabular}[h]{ccc}
 Zeitslot&ALU&Multiplizierer\\
 1&3&1\\
@@ -115,8 +122,10 @@ Zeitslot&ALU&Multiplizierer\\
 4&1&0\\
 5&0&0\\
 \end{tabular}
-\\Aus der Tabelle kann nun abgelesen werden, das 3 Resourcen des Typs ALU benötigt werden und 1 des Typs Mulitplizierer.\\
+\end{center}
+Aus der Tabelle kann nun abgelesen werden, das 3 Resourcen des Typs ALU benötigt werden und 1 des Typs Mulitplizierer.\\
 Übertragen auf die obere Tabelle ensteht nun folgendes Binding.\\
+\begin{center}
 \begin{tabular}[h]{ccc}
 $v_i$&$\beta(v_i)$&$\gamma(v_i)$\\
 $v_1$&$r_2$&1\\
@@ -131,6 +140,7 @@ $v_9$&$r_2$&2\\
 $v_10$&$r_2$&1\\
 $v_11$&$r_1$&1\\
 \end{tabular}
+\end{center}
 Somit wurden in diesem beispiel 5 Alu einheiten die einen anteil von $62,5\%$ ausmachen eingespart. Bei den Multiplizierern wurde die benötigten Resourcen auf $\frac{1}{3}$ reduziert.
 
 %-Welche INstanz und welcher Ressourcentyp
@@ -240,7 +250,15 @@ Eine mögliche vorgehensweise ist, die kosten für z.b Multiplexer gleichmäßig
 Ermöglicht wird dies über eine gänzliche betrachtung der cliquen, denen ein set an kosten zugeordnet wird, das sich aus den kosten mengen ihrer knoten ergibt. Ihre gewichtung erhaält die clique durch die anzahl ihrer hinzu gefügten knoten. Die gesamtkosten wiederum ergeben sich aus der Summe der Cliquen, die zu einer partition zusammengefügt werden.\cite[S. 247]{3}\\
 So kann eine formel für Multiplexer wie folgt aussehen:\\
 \begin{center}
-$area_{mux} = area_{mux}^{\Delta}(a-1)  $ \\und wird als:\\ $area_{M}^{0} + \sum_{i=1}^{a}area_{M}^{i}$\\ geschrieben\\  \cite[S. 247]{3}
+\begin{equation}
+area_{mux} = area_{mux}^{\Delta}(a-1) 
+\end{equation}
+und wird als:
+\begin{equation}
+area_{M}^{0} + \sum_{i=1}^{a}area_{M}^{i}
+\end{equation}
+ geschrieben\\  
+ \cite[S. 247]{3}
 \end{center}
 
 Desweiteren kann ein Algorithmus nach Tseng und Siewiorek genutzt werden in dem Cliquen partioniert, also zusammengefasst werden. Das Ziel des Alorithmus ist es ungewichtete untergraphen zu erstellen, um im anschluss eine Optimierung erhalten zu können\cite[S. 247]{3}.
