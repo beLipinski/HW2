@@ -42,6 +42,9 @@ Realisierbar werden elektrische Verschaltungen in der Digitaltechnik erst durch 
 Hierbei übernehmen verschiedene Bausteine verschiedene Aufgaben, die mal weniger und mal mehr komplizierte Operationen beinhalten. 
 \subsubsection{AND-Gatter}
 Eine der Grundoperationen, die in fast jeder Schaltung zu finden ist, ist die AND-Operation- zu deutsch die UND-Operation. Hierbei wird der Eingang erst auf logisch 1 geschaltet, wenn alle Eingänge dies ebenfalls sind.\\
+\begin{table}[h]
+\caption{Wahrheitstabelle AND-Gatter}
+\label{tab.1}
 \begin{center}
 \begin{tabular}[h]{ccc}
 x&y&Out\\
@@ -51,8 +54,12 @@ x&y&Out\\
 1&1&1\\
 \end{tabular}
 \end{center}
+\end{table}
 \subsubsection{OR-Gatter}
 Das Ergebnis des OR-Gatters ist in dem Fall wahr, wenn einer seiner Eingänge wahr ist.\\
+\begin{table}[h]
+\caption{Wahrheitstabelle Or-Gatter}
+\label{tab.2}
 \begin{center}
 \begin{tabular}[h]{ccc}
 x&y&Out\\
@@ -62,11 +69,14 @@ x&y&Out\\
 1&1&1\\
 \end{tabular}
 \end{center}
-Simple Schaltungen lassen sich durch das gezielte Aneinanderreihen von AND- und OR-Gattern gut realisieren, sollte aber 
+\end{table}
+Simple Schaltungen lassen sich durch das gezielte Aneinanderreihen von AND- und OR-Gattern gut realisieren, sie stellen die
+einfachste Form von Operanden dar, aus ihnen können fast alle
+komplexeren Schaltungen und Operanden realisiert werden.
 \subsubsection{Multiplexer}
-Multiplexer werden genutzt, wenn eine parallele Verarbeitung aus unterschiedlichsten Gründen nicht möglich ist. Das kann zum einen eine nicht ausreichende Verfügbarkeit an Kanälen sein, aber auch die bewusste Entscheidung, weniger Kanäle aus Kostengründen zu benutzen. Dieser Schritt kann gewählt werden, wenn Verläufe zwar parallel laufen, aber nur exklusiv ausgeführt werden. Das bedeutet, dass nach einer elementaren Entscheidung nur einer der beiden Stränge ausgeführt werden kann. Beeindruckend allerdings ist, dass Multiplexer trotz ihrer fortgeschrittenen Eigenschaften gegenüber der Grundbausteine doch recht simpel aus genau diesem erzeugt werden können. So ergibt sich für einen einfachen Multiplexer das Schaltbild aus zwei AND-Gattern, einem NOT-Gatter und einem OR- Gatter. .....
+Multiplexer werden genutzt, wenn eine parallele Verarbeitung aus unterschiedlichsten Gründen nicht möglich ist. Das kann zum einen eine nicht ausreichende Verfügbarkeit an Kanälen sein, aber auch die bewusste Entscheidung, weniger Kanäle aus Kostengründen zu benutzen. Dieser Schritt kann gewählt werden, wenn Verläufe zwar parallel laufen, aber nur exklusiv ausgeführt werden. Das bedeutet, dass nach einer elementaren Entscheidung nur einer der beiden Stränge ausgeführt werden kann. Beeindruckend allerdings ist, dass Multiplexer trotz ihrer fortgeschrittenen Eigenschaften gegenüber der Grundbausteine doch recht simpel aus genau diesem erzeugt werden können. So ergibt sich für einen einfachen Multiplexer das Schaltbild aus zwei AND-Gattern, einem NOT-Gatter und einem OR- Gatter.
 \subsubsection{FPGA}
-Der Einsatz dieser Grundelemente ist für das Erreichen des Ziels völlig hinreichend, doch benötigen sie eine sehr hohe Fläche, auf der sie verbaut werden müssen. Ein zu erreichendes Ziel ist die Fläche zu verringern, auf der die Schaltung realisiert werden muss. Dies ist durch die Verwendung von Halbleitern und die Entwicklung von integrierten Schaltkreisen auch erfolgreich gelungen,. Allerdings besitzen diese sogenannten ICs den Nachteil, dass ihre Schaltung- wie die einer Realisierung mit Bausteinen- auch fest gebunden ist. Ein Nachteil, den FPGA (Field Programmable Gate ARRAY) Bauteile nicht besitzen, ist die Zusammensetzung aus zusammengeschalteten Baugruppen aus Logikbausteinen, FlipFlops und deren Verbindung mit Multiplexern. In FPGAs kann das Verhalten der Eingänge zu den Ausgängen über{\color{red}...... }"programmiert" werden.
+Der Einsatz dieser Grundelemente ist für das Erreichen des Ziels völlig hinreichend, doch benötigen sie eine sehr hohe Fläche, auf der sie verbaut werden müssen. Ein zu erreichendes Ziel ist die Fläche zu verringern, auf der die Schaltung realisiert werden muss. Dies ist durch die Verwendung von Halbleitern und die Entwicklung von integrierten Schaltkreisen auch erfolgreich gelungen,. Allerdings besitzen diese sogenannten ICs den Nachteil, dass ihre Schaltung- wie die einer Realisierung mit Bausteinen- auch fest gebunden ist. Ein Nachteil, den FPGA (Field Programmable Gate ARRAY) Bauteile nicht besitzen, ist die Zusammensetzung aus zusammengeschalteten Baugruppen aus Logikbausteinen, FlipFlops und deren Verbindung mit Multiplexern. In FPGAs kann das Verhalten der Eingänge zu den Ausgängen programmiert werden.
 \subsection{Strategien zur Architektur-Optimierung}
 Mit steigender Komplexität der Verschaltungen steigt zwingend auch die Anzahl der  zu nutzenden Bauteile. Zudem steigt auch die Verwendung performaterer Bausteine stetig, um die Abarbeitung bezüglich Leistung und aller zeitlichen Deadlines einhalten zu können. Nachteilig ist vor dem Hintergrund ebenfalls, dass Bausteine mit einer höheren Leistung oftmals auch einen erhöhten Platzbedarf einfordern\cite[S.327]{2}.\\
 Ziel ist es, Strategien umzusetzen, die die Chipfläche verringern, ohne dabei die Leistungsfähigkeit der Schaltung zu beeinflussen. Leider ist dieses Problem nicht mit der Einhaltung beider Anforderungen zu vereinbaren, wodurch zum Beispiel die Verminderung der Kosten durch Senkung der Chip-Anzahl und Fläche immer auch zum Nachteil der Performance agiert. Der Zusammenhang zwischen Fläche und der erzeugten Leistungsverminderung ergibt sich aus der Fläche $a$ in der Einheit Gatteräquivalent $(Gate Equivalent GE)$, das die Größe des simpelsten Gatters widerspiegelt\cite[S.326]{2} und der Performance, die den Kehrwert der Ausführungszeit $T_{ges}$ widerspiegelt $\frac{1}{T_{ges}}$, welche sich wiederum aus der Taktzeit $T_c$ multipliziert mit der Latenz $\lambda$ zusammensetzt
@@ -97,6 +107,9 @@ Die Bindung bietet ein Tool, das veranschaulicht, wie optimal die vorhandene Sch
 \end{figure} 
 
 Dem Bild ist zu entnehmen, dass in diesem Beispiel für die Zuordnung jeder Aufgabe zu einer Ressource elf Bauteile benötigt werden, die sich aus drei Multiplikationen = $r_1$ und aus acht Operationen für eine arithmetisch-logische Einheit $r_2$ ergibt.\\
+\begin{table}[h]
+\caption{Ressourcentabelle, Des Ablaufplans vor der Optimierung}
+\label{tab.3}
  \begin{center}
 \begin{tabular}[h]{ccc}
 $v_i$&$\beta(v_i)$&$\gamma(v_i)$\\
@@ -113,7 +126,11 @@ $v_10$&$r_2$&8\\
 $v_11$&$r_1$&3\\
 \end{tabular}
 \end{center}
-Da es sich, um ein recht einfach zu überblickendes Beispiel handelt, lässt sich durch einen geübten Blick bereits erkennen, wie eine Optimierung aussehen könnte. Im ersten Zeitslot ist abzulesen, dass drei arithmetische Operationen und eine Multiplikation durchgeführt werden, somit werden 3 ALU-Einheiten und ein Multiplizierer benötigt. Im weiteren Verlauf lässt sich unter anderem erkennen, dass in keinem weiteren Zeitslot mehr als 3 ALU-Einheiten gebraucht werden, deswegen ist dies auch unsere minimal benötigte Anzahl an Ressourcen dieses Typs. Ganz genau deutlich wird dies durch eine Veranschaulichung in einer Tabelle:\\
+\end{table}
+Da es sich, um ein recht einfach zu überblickendes Beispiel handelt, lässt sich durch einen geübten Blick bereits erkennen, wie eine Optimierung aussehen könnte. Im ersten Zeitslot ist abzulesen, dass drei arithmetische Operationen und eine Multiplikation durchgeführt werden, somit werden 3 ALU-Einheiten und ein Multiplizierer benötigt. Im weiteren Verlauf lässt sich unter anderem erkennen, dass in keinem weiteren Zeitslot mehr als 3 ALU-Einheiten gebraucht werden, deswegen ist dies auch unsere minimal benötigte Anzahl an Ressourcen dieses Typs. Ganz deutlich wird dies durch die Veranschaulichung in  Tabelle \ref{tab.4}.\\
+\begin{table}[h]
+\caption{Benötigte Einheite pro Zeitslot}
+\label{tab.4}
 \begin{center}
 \begin{tabular}[h]{ccc}
 Zeitslot&ALU&Multiplizierer\\
@@ -124,8 +141,12 @@ Zeitslot&ALU&Multiplizierer\\
 5&0&0\\
 \end{tabular}
 \end{center}
-Aus der Tabelle kann nun abgelesen werden, dass Ressourcen des Typs "ALU" benötigt werden und eine des Typs "Mulitplizierer".\\
-Übertragen auf die obere Tabelle entsteht nun folgendes Binding:\\
+\end{table}
+Übertragen auf das ergebnis aus Tabelle \ref{tab.3} nun abgelesen werden, dass Ressourcen des Typs "ALU" benötigt werden und eine des Typs "Mulitplizierer".\\
+Übertragen auf die obere Tabelle \ref{tab.5} entsteht nun folgendes Binding:\\
+\begin{table}[h]
+\caption{Ressourcentabelle, Des Ablaufplans nach der Optimierung}
+\label{tab.5}
 \begin{center}
 \begin{tabular}[h]{ccc}
 $v_i$&$\beta(v_i)$&$\gamma(v_i)$\\
@@ -142,6 +163,7 @@ $v_10$&$r_2$&1\\
 $v_11$&$r_1$&1\\
 \end{tabular}
 \end{center}
+\end{table}
 Somit wurden in diesem Beispiel fünft Alu-Einheiten, die einen Anteil von $62,5\%$ ausmachen, eingespart. Bei den Multiplizierern wurden die benötigten Ressourcen auf $\frac{1}{3}$ reduziert.
 
 %-Welche INstanz und welcher Ressourcentyp
@@ -316,7 +338,7 @@ das gleiche Ziel oder Quelle haben, zu bündeln \cite[S.250]{3}.
 Des weiteren darf bei Bussystemen nicht die Verzögerung
 der Steuerungslogik vergessen werden, die aufgrund von Bus-
 Treibern ebenfalls anfällt \cite[S.250]{3}.
-\section{Fayit}
+\section{Fazit}
 Durch das Reduzieren von Hardware mittels Teilen
 von Hardware für mehr als eine Rechenoperation, konnte
 beobachtet werden, dass sich die Anzahl der eingesetzten
