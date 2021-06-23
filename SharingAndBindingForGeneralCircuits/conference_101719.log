@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2021.6.23)  23 JUN 2021 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2021.6.23)  23 JUN 2021 16:33
 entering extended mode
 **./conference_101719.tex
 (conference_101719.tex
@@ -630,6 +630,11 @@ Underfull \hbox (badness 1383) in paragraph at lines 231--235
  []
 
 
+Underfull \hbox (badness 3724) in paragraph at lines 244--250
+\T1/ptm/m/n/10 wird nun auch unter Berück-sich-ti-gung dieser ver-sucht
+ []
+
+
 Underfull \hbox (badness 3138) in paragraph at lines 244--250
 \T1/ptm/m/n/10 steigen-der kom-plex-ität der Ver-schal-tung das bes-tim-men
  []
@@ -742,7 +747,7 @@ sfonts/cm/cmsy7.pfb><C:/Users/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmb8a.pfb><C:/Users/bened/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/urw/times/utmr8a.pfb><C:/Users/bened/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (8 pages, 1841094 bytes).
+Output written on conference_101719.pdf (8 pages, 1841017 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
