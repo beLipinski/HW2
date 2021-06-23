@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2021.6.23)  23 JUN 2021 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2021.6.23)  23 JUN 2021 15:58
 entering extended mode
 **./conference_101719.tex
 (conference_101719.tex
@@ -614,58 +614,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--230
  []
 
 
-Underfull \hbox (badness 5388) in paragraph at lines 231--236
- \T1/ptm/m/it/10 4) Kon-trollein-heiten: [][] \T1/ptm/m/n/10 Da Sig-nale zur st
+Underfull \hbox (badness 4492) in paragraph at lines 231--235
+ \T1/ptm/m/it/10 4) Kon-trollein-heiten: [][] \T1/ptm/m/n/10 Da Sig-nale zur St
 euerung von
  []
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 245--251
+Underfull \hbox (badness 2261) in paragraph at lines 231--235
+\T1/ptm/m/n/10 Bausteinen uner-lässlich sind und diese let-z-tendlich den
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 231--235
+\T1/ptm/m/n/10 gle-ichen Beschränkun-gen und Ein-flüssen un-ter-liegen wie
+ []
+
+
+Underfull \hbox (badness 3138) in paragraph at lines 244--250
 \T1/ptm/m/n/10 steigen-der kom-plex-ität der Ver-schal-tung das bes-tim-men
  []
 
 
-Underfull \hbox (badness 6094) in paragraph at lines 245--251
+Underfull \hbox (badness 6094) in paragraph at lines 244--250
 \T1/ptm/m/n/10 angenom-men wer-den das, das ein ergeb-nis in einer
  []
 
 
-Underfull \hbox (badness 3601) in paragraph at lines 245--251
+Underfull \hbox (badness 3601) in paragraph at lines 244--250
 \T1/ptm/m/n/10 Eine mögliche vorge-hensweise ist, die kosten für z.b
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--251
+Underfull \hbox (badness 10000) in paragraph at lines 244--250
 
  []
 
 [5]
-Underfull \hbox (badness 3872) in paragraph at lines 263--267
+Underfull \hbox (badness 3872) in paragraph at lines 262--266
 []\T1/ptm/m/n/10 Desweiteren kann ein Al-go-rith-mus nach Tseng und
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 268--273
+Underfull \hbox (badness 1354) in paragraph at lines 267--272
 \T1/ptm/m/n/10 steuerelek-tronik, die verk-a-belung und die Daten hal-tung
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 268--273
+Underfull \hbox (badness 1442) in paragraph at lines 267--272
 \T1/ptm/m/n/10 ver-letzt. Be-tra-chtet wird ein Pfad, in einem Ablauf-plan
  []
 
 
-Underfull \hbox (badness 3780) in paragraph at lines 268--273
+Underfull \hbox (badness 3780) in paragraph at lines 267--272
 \T1/ptm/m/n/10 Op-er-a-tio-nen [3, S.249]. unter dieser zu-hilfenahme ist
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--273
+Underfull \hbox (badness 10000) in paragraph at lines 267--272
 
  []
 
 
-Overfull \hbox (30.3046pt too wide) detected at line 283
+Overfull \hbox (30.3046pt too wide) detected at line 282
 [] \OML/cmm/m/it/10 d[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 multiplexer[]delay\O
 T1/cmr/m/n/10 (\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 wireing[]
 delay\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 < Ph
@@ -673,7 +683,7 @@ i\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 path
  []
 
 
-Underfull \hbox (badness 7256) in paragraph at lines 292--293
+Underfull \hbox (badness 7256) in paragraph at lines 291--292
 []\T1/ptm/m/n/8 Giovanni De Micheli, Syn-the-sis and Op-ti-miza-tion of Dig-i-t
 al
  []
@@ -732,7 +742,7 @@ sfonts/cm/cmsy7.pfb><C:/Users/bened/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmb8a.pfb><C:/Users/bened/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/urw/times/utmr8a.pfb><C:/Users/bened/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (8 pages, 1841079 bytes).
+Output written on conference_101719.pdf (8 pages, 1841094 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
