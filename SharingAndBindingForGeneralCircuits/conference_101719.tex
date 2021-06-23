@@ -24,7 +24,9 @@ benedikt.lipinski@stud.hshl.de}
 }
 \maketitle
 \begin{abstract}
-
+Zur Verringerung der benötigten Hardware aus Platz- und Kostengründen wird diese mittels bestimmter Algorithmen verringert.
+Aufgezeigt wird, welche Vorteile das Verteilen von Rechenoperationen auf eine verringerte Hardware hat, außerdem eine grobe
+Funktion bestimmter Algorithmen und die dabei auftretenden Probleme bezüglich der Latenz.
 \end{abstract}
 \end{titlepage}
 
@@ -282,9 +284,82 @@ Das resource sharing unter zeitlichen aspketen wird mit der formel
 \end{equation}
 \end{center}
  beschrieben \cite[S.249]{3}
+ Ein weiteres Problem bei der Entscheidung
+der verwendeten Übertragungsart ist nach G. De Micheli
+\cite[S.250]{3}, dass eine ausschließliche Umsetzung mittels
+Multiplexer mit der einer reinen Umsetzung per Verkabelung
+im Konflikt steht. Das bedeutet für den Fall, dass eine der
+beiden genannten Verzögerungen vernachlässigbar wäre, die
+Wahl immer auf diese fällt. Daraus ergibt sich konkret, wenn
+die Verzögerung der Verkabelung $wirering_delay(B)$ vernachlässigbar
+wäre, dass es sich nicht lohnt Signale zu multitplexen,
+da die Verzögerung der Steuerlogik von Multitplexern
+eine Verschlechterung der Ausführungszeit zu verantworten
+hätte.\\
+Demnach ist auch in diesem Fall ein gesundes Mittelmaß
+und ein gezielter Einsatz beider Implementierungsarten das
+richtige Mittel, um eine möglichst kurze Gesamtverzögerung
+umzusetzen.
 
 \section{Gleichnis,vorgestellter Algorithmen}
-\section{Ausblick}
+Weitere Probleme, die mit der realen Betrachtung und somit
+der Beeinflussung durch Verzögerungen, der Verkabelung und
+der Steuerlogik einhergehen, ist dass auch bei der Datenhaltung
+selbst Verzögerungen auftreten, die es so minimal zu
+halten gilt, wie möglich unter weiterer Berücksichtigung von
+Fläche und somit Kosten.\\
+Somit gilt es auch bei Registern ,Multi-Port Memory, und
+Bussystemen darauf zu achten, dass Kabelwege so kurz wie
+möglich gehalten werden. Außerdem soll bei Multi-Port Memory
+und Bussystemen darauf geachtet werden Variablen, die
+das gleiche Ziel oder Quelle haben, zu bündeln \cite[S.250]{3}.
+Des weiteren darf bei Bussystemen nicht die Verzögerung
+der Steuerungslogik vergessen werden, die aufgrund von Bus-
+Treibern ebenfalls anfällt \cite[S.250]{3}.
+\section{Fayit}
+Durch das Reduzieren von Hardware mittels Teilen
+von Hardware für mehr als eine Rechenoperation, konnte
+beobachtet werden, dass sich die Anzahl der eingesetzten
+Hardwareteile deutlich reduzieren lässt. Dies bietet somit
+einen erheblichen vorteilhaften Effekt auf eine umgesetzte
+Verschaltung bezüglich Flächen und Kosten einer Schaltung.
+In einem ersten Moment sind die Vorteile einer verkleinerten
+Schaltung sicherlich, dass eine Umsetzung auch in Systemen
+mit einem kritischen Platzangebot ermöglicht wird. Um ein
+Beispiel zu nennen, profitieren hiervon aktuell immer kleiner
+werdende Geräte für das Internet der dinge. Ein weiterer Aspekt
+ist die Abhängigkeit von Kosten zur verwendeten Fläche
+einer Schaltung, demnach steigen mit wachsender Anzahl an
+verwendeter Hardware auch die Kosten für eine Schaltung.
+Folglich ist das primäre Ziel auch hier, die Schaltung so
+klein wie möglich zu halten. Was im ersten Moment für
+einen Unbeteiligten bei Bauteilkosten von wenigen Cent als
+marginal betrachtet werden kann, so scheint es doch sinnvoll,
+bei hohen Abnahmemengen durchaus auf jeden gesparten
+Cent zu achten. Vorteile sind neben weniger Kosten für Unternehmen
+auch eine bessere Konkurrenzfähigkeit gegenüber
+anderen Herstellern. Zudem kann die Verringerung der Kosten
+ebenfalls an den Kunden weitergegeben werden, was den
+Vorteil hat, auch Menschen mit weniger finanziellen Mitteln
+einen Zugang zu Technik zu ermöglichen.
+Gezeigt wurde also, dass es sehr vielschichtige Gründe gibt,
+die Anzahl der verwendeten Hardwarekomponenten einer
+Schaltung zu reduzieren- leider ist auch die Reduzierung
+von Hardware nicht umsonst. Eine Verminderung von Hardwarekomponenten
+ist nur unter der Beeinflussung der Ausführungszeit
+möglich. Das bedeutet theoretisch wäre es durchaus
+möglich, eine komplette Schaltung mit nur einer Hardwarekomponente
+jeden Typs auszuführen, allerdings würde
+das in einem katastrophalen Anstieg der Ausführungszeit
+enden. Um dennoch ein Optimum zu finden, wird zum Beispiel
+das Paretoprinzip eingesetzt.
+Letztendlich ist es wichtig festzuhalten, dass es sich bei der
+Optimierung von Schaltungen keinesfalls um etwas Einfaches
+handelt. Die Optimierung mittels Teilen von Hardwarekomponenten
+fordert ein breit gefächertes Verständnis von Algorithmen
+und theoretischen Annahmen der Informatik- doch
+kann ein erfolgreiches Ergebnis einer Optimierung Großes
+bewirken.
 \begin{thebibliography}{00}
 \bibitem{1} Jürgen Teich, Christian Haubelt, Digitale Hardware/Software-Systeme, Synthese und Optimierung, 2. Auflage,Springer,2007
 \bibitem{2} Dr.Walter Lange, Prof.Dr.Martin Bogdan, Entwurf und Syntese von Eingebetteten Systhemen, Ein Lehrbuch,Oldenbourg Verlag München, 2013
