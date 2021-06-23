@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.28)  23 JUN 2021 20:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.28)  23 JUN 2021 21:15
 entering extended mode
 **./conference_101719.tex
 (conference_101719.tex
@@ -381,15 +381,6 @@ Package pdftex.def Info: fig_bsp_binding.png  used on input line 104.
 (pdftex.def)             Requested size: 199.4056pt x 158.332pt.
 
 
-LaTeX Warning: Reference `tab.4' on page 2 undefined on input line 130.
-
-
-LaTeX Warning: Reference `tab.3' on page 2 undefined on input line 145.
-
-
-LaTeX Warning: Reference `tab.5' on page 2 undefined on input line 146.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2 <./fig_bsp_binding.png>]
@@ -421,20 +412,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--183
 
 Underfull \hbox (badness 10000) in paragraph at lines 177--183
 \T1/ptm/m/n/10 durch $\OML/cmm/m/it/10 G[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 V; 
-E\OT1/cmr/m/n/10 )$ \T1/ptm/m/n/10 in de-nen die Knoten durch
+E\OT1/cmr/m/n/10 )$\T1/ptm/m/n/10 , in de-nen die Knoten durch
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 177--183
 
  []
-
-
-Underfull \vbox (badness 2005) has occurred while \output is active []
-
-
-
-LaTeX Warning: Citation `?' on page 3 undefined on input line 185.
 
 
 Underfull \hbox (badness 1509) in paragraph at lines 184--186
@@ -448,28 +432,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--186
  []
 
 
-LaTeX Warning: Citation `?' on page 3 undefined on input line 187.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
-
-LaTeX Warning: Citation `?' on page 3 undefined on input line 189.
-
-[3]
-<fig_comp_mult.png, id=30, 208.3785pt x 184.89075pt>
+<fig_comp_mult.png, id=26, 208.3785pt x 184.89075pt>
 File: fig_comp_mult.png Graphic file (type png)
 <use fig_comp_mult.png>
 Package pdftex.def Info: fig_comp_mult.png  used on input line 193.
 (pdftex.def)             Requested size: 114.60852pt x 101.6902pt.
-<fig_comp_alu.png, id=31, 543.2295pt x 458.9145pt>
+<fig_comp_alu.png, id=27, 543.2295pt x 458.9145pt>
 File: fig_comp_alu.png Graphic file (type png)
 <use fig_comp_alu.png>
 Package pdftex.def Info: fig_comp_alu.png  used on input line 199.
 (pdftex.def)             Requested size: 244.451pt x 206.50961pt.
-<fig_cliquen.png, id=32, 3521.155pt x 2489.3pt>
+<fig_cliquen.png, id=28, 3521.155pt x 2489.3pt>
 File: fig_cliquen.png Graphic file (type png)
 <use fig_cliquen.png>
 Package pdftex.def Info: fig_cliquen.png  used on input line 205.
@@ -479,7 +456,17 @@ Overfull \hbox (29.69815pt too wide) in paragraph at lines 205--206
  [] 
  []
 
-[4 <./fig_comp_mult.png> <./fig_comp_alu.png> <./fig_cliquen.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 4779) has occurred while \output is active []
+
+ [4 <./fig_comp_mult.png> <./fig_comp_alu.png> <./fig_cliquen.png>]
 Underfull \hbox (badness 2426) in paragraph at lines 244--247
 \T1/ptm/m/n/10 Die Leben-szeit ergibt sich nach De Micheli aus dem
  []
@@ -500,13 +487,8 @@ Underfull \hbox (badness 1715) in paragraph at lines 248--250
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 248--250
-\T1/ptm/m/n/10 zu-ge-ord-net bekommt- einen so-ge-nan-nten Over-head. Als
- []
-
-
-Underfull \hbox (badness 6157) in paragraph at lines 248--250
-\T1/ptm/m/n/10 zweite Kom-po-nente wer-den die Bus-treiber aufge-führt,
+Underfull \hbox (badness 5504) in paragraph at lines 248--250
+\T1/ptm/m/n/10 aufgezeigten Vorgän-gen be-tra-chtet wer-den kön-nen, als
  []
 
 
@@ -546,11 +528,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 251--254
  []
 
 
-Underfull \hbox (badness 1412) in paragraph at lines 251--254
-\T1/ptm/m/n/10 muss und sich somit wiederum auch auf die benötigte
- []
-
-
 Underfull \hbox (badness 3735) in paragraph at lines 251--254
 \T1/ptm/m/n/10 Fläche aus-bre-itet. So müssen beispiel-sweise Leitun-gen,
  []
@@ -582,52 +559,42 @@ Underfull \hbox (badness 1383) in paragraph at lines 255--259
  []
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 268--274
-\T1/ptm/m/n/10 steigen-der kom-plex-ität der Ver-schal-tung das bes-tim-men
+Underfull \hbox (badness 1902) in paragraph at lines 268--303
+\T1/ptm/m/n/10 steigen-der Kom-plex-ität der Ver-schal-tung das Bes-tim-men
  []
 
 
-Underfull \hbox (badness 6094) in paragraph at lines 268--274
-\T1/ptm/m/n/10 angenom-men wer-den das, das ein ergeb-nis in einer
+Underfull \hbox (badness 1565) in paragraph at lines 268--303
+\T1/ptm/m/n/10 Eine mögliche Vorge-hensweise ist, die Kosten für zum
  []
 
 
-Underfull \hbox (badness 3601) in paragraph at lines 268--274
-\T1/ptm/m/n/10 Eine mögliche vorge-hensweise ist, die kosten für z.b
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 268--274
+Underfull \hbox (badness 10000) in paragraph at lines 268--303
 
  []
 
 [5]
-Underfull \hbox (badness 3872) in paragraph at lines 286--290
-[]\T1/ptm/m/n/10 Desweiteren kann ein Al-go-rith-mus nach Tseng und
+Underfull \hbox (badness 1694) in paragraph at lines 315--344
+[]\T1/ptm/m/n/10 Des weit-eren kann ein Al-go-rith-mus nach Tseng und
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 291--296
-\T1/ptm/m/n/10 steuerelek-tronik, die verk-a-belung und die Daten hal-tung
+Underfull \hbox (badness 10000) in paragraph at lines 345--367
+\T1/ptm/m/n/10 Mehrfach-nutzung der Hard-warekom-po-nen-ten bee-in-flusst
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 291--296
-\T1/ptm/m/n/10 ver-letzt. Be-tra-chtet wird ein Pfad, in einem Ablauf-plan
+Underfull \hbox (badness 2529) in paragraph at lines 345--367
+\T1/ptm/m/n/10 Steuerelek-tronik, die Verk-a-belung und die Daten-hal-tung
  []
 
 
-Underfull \hbox (badness 3780) in paragraph at lines 291--296
-\T1/ptm/m/n/10 Op-er-a-tio-nen [3, S.249]. unter dieser zu-hilfenahme ist
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 291--296
+Underfull \hbox (badness 10000) in paragraph at lines 345--367
 
  []
 
 
-Overfull \hbox (30.3046pt too wide) detected at line 306
+Overfull \hbox (30.3046pt too wide) detected at line 378
 [] \OML/cmm/m/it/10 d[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 multiplexer[]delay\O
 T1/cmr/m/n/10 (\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 wireing[]
 delay\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 < Ph
@@ -635,17 +602,22 @@ i\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 path
  []
 
 [6]
-Underfull \hbox (badness 4060) in paragraph at lines 342--385
+Underfull \hbox (badness 4060) in paragraph at lines 414--457
 []\T1/ptm/m/n/10 Durch das Re-duzieren von Hard-ware mit-tels Teilen
  []
 
 
-Underfull \hbox (badness 7256) in paragraph at lines 388--389
+Underfull \hbox (badness 7256) in paragraph at lines 460--461
 []\T1/ptm/m/n/8 Giovanni De Micheli, Syn-the-sis and Op-ti-miza-tion of Dig-i-t
 al
  []
 
-(conference_101719.lof)
+(conference_101719.lof
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+ [][] []\T1/ptm/m/n/10 Ablaufplan und Verträglichkeits-graphen mit 
+ []
+
+)
 \tf@lof=\write3
 \openout3 = `conference_101719.lof'.
 
@@ -669,18 +641,15 @@ Before submitting the final camera ready copy, remember to:
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  4745 strings out of 479321
  70240 string characters out of 2856583
- 378417 words of memory out of 3000000
+ 380530 words of memory out of 3000000
  22127 multiletter control sequences out of 15000+600000
  514633 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,10n,78p,1226b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,10n,78p,1114b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/bened/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/bened/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
 0.pfb><C:/Users/bened/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
@@ -699,7 +668,7 @@ bened/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
 es/utmb8a.pfb><C:/Users/bened/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
 es/utmr8a.pfb><C:/Users/bened/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on conference_101719.pdf (8 pages, 1877919 bytes).
+Output written on conference_101719.pdf (8 pages, 1877706 bytes).
 PDF statistics:
  99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
